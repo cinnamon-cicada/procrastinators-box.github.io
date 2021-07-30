@@ -1,7 +1,7 @@
 .header {
   padding: 5px;
   padding-right: 33%;
-  background: #2b9dff;
+  background: #6882ff;
   color: white;
   font-size: 17px;
   font-family: 'Patrick Hand', cursive;
@@ -9,4 +9,12 @@
   width: 20%;
   position: fixed;
   z-index: 1;
+}
+
+#midHeader {
+  padding: 5px;
+  background: #2b9dff;
+  font-family: 'Patrick Hand', cursive;
+  position: fixed;
+  z-index: 0;
 }
