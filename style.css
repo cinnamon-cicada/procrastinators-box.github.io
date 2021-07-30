@@ -1,6 +1,5 @@
 .header {
   padding: 5px;
-  padding-right: 33%;
   background: #6882ff;
   color: white;
   font-size: 17px;
@@ -8,13 +7,13 @@
   text-align: center;
   width: 20%;
   position: fixed;
-  z-index: 1;
+  z-index: 0;
 }
 
 #midHeader {
   padding: 5px;
   background: #2b9dff;
-  font-family: 'Patrick Hand', cursive;
   position: fixed;
-  z-index: 0;
+  z-index: 1;
+  padding-right: 33%;
 }
