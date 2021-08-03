@@ -7,13 +7,13 @@
   text-align: center;
   height: 70px;
   margin-top: 0px;
-  position: fixed;
+  position: relative;
   z-index: 0;
 }
 
 #logoHeader {
   background: #2b9dff;
-  position: fixed;
+  position: relative;
   z-index: 1;
   margin-left: 40%;
   width: 10%;
