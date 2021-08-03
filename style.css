@@ -1,11 +1,12 @@
 .header {
-  padding: 5px;
+  padding: 2px;
   background: #6882ff;
   color: white;
-  font-size: 17px;
+  font-size: 13px;
   font-family: 'Patrick Hand', cursive;
   text-align: center;
   width: 20%;
+  height: 10%;
   position: fixed;
   z-index: 0;
 }
