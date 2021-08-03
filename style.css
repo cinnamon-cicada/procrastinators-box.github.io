@@ -5,16 +5,17 @@
   font-size: 13px;
   font-family: 'Patrick Hand', cursive;
   text-align: center;
-  height: 10%;
+  height: 70px;
+  margin-top: 0px;
   position: fixed;
   z-index: 0;
 }
 
-#midHeader {
+#logoHeader {
   background: #2b9dff;
   position: fixed;
   z-index: 1;
+  margin-left: 40%;
   width: 10%;
   padding-right: 10%;
-  margin-left: 40%;
 }
