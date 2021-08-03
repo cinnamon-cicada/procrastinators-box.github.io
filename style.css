@@ -1,5 +1,5 @@
 .header {
-  padding: 2px;
+  padding: 1px;
   background: #6882ff;
   color: white;
   font-size: 13px;
@@ -14,7 +14,7 @@
 #logoHeader {
   background: #2b9dff;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   margin-left: 40%;
   width: 10%;
   padding-right: 10%;
