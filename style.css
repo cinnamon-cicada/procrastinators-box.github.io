@@ -13,7 +13,7 @@
 
 #logoHeaderLeft {
   background: #2b9dff;
-  position: relative;
+  position: absolute;
   z-index: 1;
   margin-left: 40%;
   width: 10%;
@@ -23,7 +23,7 @@
 
 #logoHeaderRight {
   background: #2b9dff;
-  position: relative;
+  position: absolute;
   z-index: 0;
   margin-left: 50%;
   width: 10%;
