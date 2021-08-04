@@ -24,7 +24,7 @@
 #logoHeaderRight {
   background: #2b9dff;
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   margin-left: 50%;
   width: 10%;
   margin-top: 0px;
