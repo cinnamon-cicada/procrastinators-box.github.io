@@ -20,6 +20,7 @@
   line-height: 50%;
   margin-top: 0px;
   padding: 1px;
+  height: 70px;
 }
 
 #logoHeaderRight {
@@ -33,4 +34,5 @@
   padding-right: 1px;
   z-index: 1;
   padding: 1px;
+  height: 70px;
 }
