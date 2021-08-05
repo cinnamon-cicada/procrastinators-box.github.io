@@ -11,6 +11,14 @@
   z-index: 0;
 }
 
+#stations {
+  width: 20%;
+  margin-left: 60%;
+  margin-top: 0px;
+  z-index: 1;
+  text-align: center;
+}
+
 #logoHeaderLeft {
   background: #2b9dff;
   position: absolute;
