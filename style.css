@@ -12,12 +12,15 @@
 }
 
 .subpageButtons {
-  width: 20%;
-  margin-left: 60%;
   margin-top: 0px;
   z-index: 1;
   text-align: center;
   background-color: #6882ff;
+}
+
+#stations {
+  margin-left: 60%;
+  width: 20%;
 }
 
 #logoHeaderLeft {
