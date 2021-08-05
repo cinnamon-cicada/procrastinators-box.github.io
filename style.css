@@ -18,6 +18,10 @@
   background-color: #6882ff;
 }
 
+.subpageButtons:hover {
+  background-color: #9bacfe;
+}
+
 #stations {
   margin-left: 60%;
   width: 20%;
