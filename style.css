@@ -53,3 +53,8 @@
   padding-top: 2px;
   height: 70px;
 }
+
+#logoSymbol {
+  max-width: 100%;
+  mix-blend-mode: multiply;
+}
