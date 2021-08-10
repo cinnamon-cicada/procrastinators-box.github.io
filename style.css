@@ -16,6 +16,10 @@
   z-index: 1;
   text-align: center;
   background-color: #6882ff;
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 11px;
+  height: 70px;
 }
 
 .subpageButtons:hover {
@@ -54,6 +58,6 @@
 }
 
 #logoSymbol {
-  max-width: 100%;
+  max-width: 20px;
   mix-blend-mode: multiply;
 }
