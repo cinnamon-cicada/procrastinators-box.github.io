@@ -63,7 +63,7 @@
 }
 
 #logoSymbol {
-  max-width: 400%;
+  max-width: 100%;
   mix-blend-mode: multiply;
   z-index: 2;
 }
