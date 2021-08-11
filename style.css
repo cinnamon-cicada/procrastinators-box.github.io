@@ -12,6 +12,10 @@
   z-index: 0;
 }
 
+.headerText {
+  z-index: 3;
+}
+
 .subpageButtons {
   margin-top: 0px;
   z-index: 1;
@@ -61,4 +65,5 @@
 #logoSymbol {
   max-width: 400%;
   mix-blend-mode: multiply;
+  z-index: 2;
 }
