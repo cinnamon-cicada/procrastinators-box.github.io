@@ -36,6 +36,10 @@
   width: 20%;
 }
 
+#stationsActive {
+  font-weight: bold;
+}
+
 #logoHeaderLeft {
   background: #2b9dff;
   position: absolute;
