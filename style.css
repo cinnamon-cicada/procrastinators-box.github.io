@@ -76,11 +76,18 @@
   z-index: 2;
 }
 
+.orangeButton {
+  background-color: #FF9932;
+}
+
+.orangeButton:hover {
+  background-color: #ff860d;
+}
+
 /*** STATIONS DROPDOWN MENU ***/
 
 /* Style The Dropdown Button */
 .dropdownButton {
-  background-color: #FF9932;
   padding: 10px;
   border: none;
   cursor: pointer;
@@ -129,4 +136,12 @@
   background-color: #ff860d;
 }
 
-/*https://www.w3schools.com/Css/tryit.asp?filename=trycss_dropdown_button*/
+/*** TAKE THE QUIZ ***/
+#takeTheQuiz {
+  width: 10%;
+  background-color: #FF9932;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
