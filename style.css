@@ -144,11 +144,13 @@
 
 /*** TAKE THE QUIZ ***/
 #takeTheQuiz {
-  width: 15%;
+  width: 20%;
   background-color: #FF9932;
-  padding: 20px;
+  padding: 30px;
   border: none;
   cursor: pointer;
   text-align: center;
-  margin-left: 42.5%;
+  margin-left: 40%;
+  font-size: 20px;
+  margin-top: 45%;
 }
