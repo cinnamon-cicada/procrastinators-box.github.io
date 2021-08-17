@@ -88,11 +88,12 @@
 
 /* Style The Dropdown Button */
 .dropdownButton {
-  padding: 10px;
+  padding: 20px;
   border: none;
   cursor: pointer;
   text-align: center;
-  width: 10%;
+  width: 15%;
+  margin-left: 42.5%;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -138,10 +139,11 @@
 
 /*** TAKE THE QUIZ ***/
 #takeTheQuiz {
-  width: 10%;
+  width: 15%;
   background-color: #FF9932;
-  padding: 10px;
+  padding: 20px;
   border: none;
   cursor: pointer;
   text-align: center;
+  margin-left: 42.5%;
 }
