@@ -40,7 +40,7 @@
   width: 20%;
 }
 
-#stationsActive {
+.activeTab {
   font-weight: bold;
 }
 
