@@ -146,11 +146,11 @@
 #takeTheQuiz {
   width: 20%;
   background-color: #FF9932;
-  padding: 30px;
+  padding: 22px;
   border: none;
   cursor: pointer;
   text-align: center;
   margin-left: 40%;
   font-size: 20px;
-  margin-top: 45%;
+  margin-top: 20%;
 }
