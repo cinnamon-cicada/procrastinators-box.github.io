@@ -76,14 +76,6 @@
   z-index: 2;
 }
 
-.orangeButton {
-  background-color: #FF9932;
-}
-
-.orangeButton:hover {
-  background-color: #ff860d;
-}
-
 /*** STATIONS DROPDOWN MENU ***/
 
 /* Style The Dropdown Button */
@@ -93,7 +85,7 @@
   cursor: pointer;
   text-align: center;
   width: 100%;
-  background-color: #FF9932;
+  background-color: #82ff84;
   color: white;
   font-size: 13px;
   font-family: 'Patrick Hand', cursive;
@@ -155,7 +147,7 @@
 /*** TAKE THE QUIZ ***/
 #takeTheQuiz {
   width: 20%;
-  background-color: #FF9932;
+  background-color: #82ff84;
   padding: 22px;
   border: none;
   cursor: pointer;
