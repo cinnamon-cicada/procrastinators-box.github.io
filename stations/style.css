@@ -11,7 +11,7 @@
 
 .titleText {
   color: white;
-  font-size: 11px;
+  font-size: 13px;
   font-family: 'Patrick Hand', cursive;
   text-align: center;
 }
@@ -27,7 +27,7 @@
   background-color: #6882ff;
   color: white;
   font-family: 'Patrick Hand', cursive;
-  font-size: 11px;
+  font-size: 13px;
   height: 70px;
 }
 
@@ -153,4 +153,13 @@
   margin-left: 40%;
   font-size: 20px;
   margin-top: 20%;
+}
+
+/*** BODY ***/
+.bodyText {
+  color: black;
+  font-size: 13px;
+  font-family: 'Patrick Hand', cursive;
+  text-align: center; 
+  line-height: 1.6;
 }
