@@ -85,7 +85,7 @@
   cursor: pointer;
   text-align: center;
   width: 100%;
-  background-color: #82ff84;
+  background-color: #59f05b;
   color: white;
   font-size: 13px;
   font-family: 'Patrick Hand', cursive;
@@ -147,7 +147,7 @@
 /*** TAKE THE QUIZ ***/
 #takeTheQuiz {
   width: 20%;
-  background-color: #82ff84;
+  background-color: #59f05b;
   padding: 22px;
   border: none;
   cursor: pointer;
