@@ -47,18 +47,19 @@
          <br>  
 
          <p>Choose add-ons:</p>
-         <label for="fullscreenImgLabel" class="bodyText">Fullscreen Image</label> <br>
-         <input type="radio" id="fullscreenImg" name="secondary_theme" value="fullscreenImg">
+         <label for="fullscreenImgLabel" class="bodyText"> Fullscreen Image?</label> <br>
+         <input type="checkbox" id="fullscreenImg" name="secondary_theme" value="fullscreenImg">
 
-         <input type="radio" id="pomodoroForward" name="primary_theme" value="pomodoroForward">
-         <label for="pomodoroForwardLabel" class="bodyText">Pomodoro: Count forwards</label> <br>
-         <input type="radio" id="pomodoroBackward" name="primary_theme" value="pomodoroBackward">
-         <label for="pomodoroBackwardLabel" class="bodyText">Pomodoro: Count backwards</label> <br>
+         <label for="pomodoroForwardLabel" class="bodyText" type="checkbox">Pomodoro: Count forwards</label> <br>
+         <input type="checkbox" id="pomodoroForward" name="secondary_theme" value="pomodoroForward">
+         
+         <label for="pomodoroBackwardLabel" class="bodyText" type="checkbox">Pomodoro: Count backwards</label> <br>
+         <input type="checkbox" id="pomodoroBackward" name="secondary_theme" value="pomodoroBackward">
          
          <label for="addNoise" class="bodyText">Music/ambient noise (insert a YouTube link): &nbsp;&nbsp;&nbsp;&nbsp;</label>
-         <input type="text" id="addNoise" name="addTitle"> <br>
-         <label for="addBackground" class="bodyText">Title: &nbsp;&nbsp;&nbsp;&nbsp;</label>
-         <input type="text" id="makeTitle" name="makeTitle">
+         <input type="text" id="addNoise" name="addNoise"> <br>
+         <label for="addBackgroundColor" class="bodyText">Add Background Color: &nbsp;&nbsp;&nbsp;&nbsp;</label>
+         <input type="text" id="addBkgColor" name="addBkgColor">
          
        </form>
        
