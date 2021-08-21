@@ -33,26 +33,27 @@
          <label for="addTitle" class="bodyText">Title: &nbsp;&nbsp;&nbsp;&nbsp;</label>
          <input type="text" id="addTitle" name="addTitle"> <br>
 
-         <p>Choose a primary theme:</p>
+         <p class="bodyText">Choose a primary theme:</p>
          <input type="radio" id="pomodoroForward" name="primary_theme" value="pomodoroForward">
-         <label for="html">Pomodoro: Count forwards</label><br>
+         <label for="pomodoroForwardLabel" class="bodyText">Pomodoro: Count forwards</label> <br>
          <input type="radio" id="pomodoroBackward" name="primary_theme" value="pomodoroBackward">
-         <label for="css">Pomodoro: Count backwards</label><br>
+         <label for="pomodoroBackwardLabel" class="bodyText">Pomodoro: Count backwards</label> <br>
          <!-- placeholder for TEXT, VOICE CHAT -->
-         <input type="radio" id="javascript" name="primary_theme" value="JavaScript">
-         <label for="javascript">JavaScript</label>
-         <!-- placeholder for FULLSCREEN IMAGE/VIDEO -->
-
+         <input type="radio" id="list" name="primary_theme" value="list">
+         <label for="list" class="bodyText">List</label> <br> 
+         <input type="radio" id="fullscreenImg" name="primary_theme" value="fullscreenImg">
+         <label for="fullscreenImgLabel" class="bodyText">Fullscreen Image</label> <br>
+       
          <br>  
 
-         <p>Please select your age:</p>
-         <input type="radio" id="age1" name="age" value="30">
-         <label for="age1">0 - 30</label><br>
-         <input type="radio" id="age2" name="age" value="60">
-         <label for="age2">31 - 60</label><br>  
-         <input type="radio" id="age3" name="age" value="100">
-         <label for="age3">61 - 100</label><br><br>
-         <input type="submit" value="Submit">         
+         <p>Choose add-ons:</p>
+         <label for="fullscreenImgLabel" class="bodyText">Fullscreen Image</label> <br>
+         <input type="radio" id="fullscreenImg" name="secondary_theme" value="fullscreenImg">
+
+         <input type="radio" id="pomodoroForward" name="primary_theme" value="pomodoroForward">
+         <label for="pomodoroForwardLabel" class="bodyText">Pomodoro: Count forwards</label> <br>
+         <input type="radio" id="pomodoroBackward" name="primary_theme" value="pomodoroBackward">
+         <label for="pomodoroBackwardLabel" class="bodyText">Pomodoro: Count backwards</label> <br>
          
          <label for="addNoise" class="bodyText">Music/ambient noise (insert a YouTube link): &nbsp;&nbsp;&nbsp;&nbsp;</label>
          <input type="text" id="addNoise" name="addTitle"> <br>
