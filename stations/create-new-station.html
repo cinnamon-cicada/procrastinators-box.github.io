@@ -27,6 +27,13 @@
        <form method="get" action="/stations">
         <button type="submit" class="subpageButtons" id="stations">Stations</button>
        </form>
+       
+       <div class="dropdown" class="titleText">
+         <button class="dropdownButton" class="titleText">Select a station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▽</button>
+           <div class="dropdown-content">
+             <a href="/stations/create-new-station">Create new station</a>
+           </div>
+       </div>
         
        <form>
          <br>
@@ -47,10 +54,8 @@
          <p class="bodyText">Choose add-ons:</p>
          <input type="checkbox" id="fullscreenImg" value="fullscreenImg">
          <label for="fullscreenImgLabel" class="bodyText"> Fullscreen Image</label> <br>
-         
          <input type="checkbox" id="pomodoroForward" value="pomodoroForward">
          <label for="pomodoroForwardLabel" class="bodyText" type="checkbox">Pomodoro: Count forwards</label> <br>
-        
          <input type="checkbox" id="pomodoroBackward" value="pomodoroBackward">
          <label for="pomodoroBackwardLabel" class="bodyText" type="checkbox">Pomodoro: Count backwards</label> <br>
          
@@ -60,6 +65,8 @@
          <input type="text" id="addBkgColor" name="addBkgColor"> <br>
          
        </form>
+       
+       
        
        
      </div> 
