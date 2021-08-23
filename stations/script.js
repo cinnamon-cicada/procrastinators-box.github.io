@@ -8,12 +8,31 @@ var title = document.getElementByName('addTitle');
 
 for (var i = 0, length = primaryTheme.length; i < length; i++) {
   if(!(title === "")) {
-    document.getElementById("dropdownStuff").innerHTML += "<a href='/stations/create-new-station" + "/" + title + "'>" + title + "</a>"; //maybe use something like a long webpage, which gets longer per station, and each station is only "active" if you're on it right then
+    
+    var newDiv = document.createElement(title);
+    newDiv.id = title;
+    
+    document.body.appendChild(newDiv);
+    document.getElementById("dropdownStuff").innerHTML += "<a href=#'" + title + "'>" + title + "</a>"; 
     
     if (primaryTheme[i].checked) {
-      if (primaryTheme[i].value == 
+      //forward pomodoro
+      if (i === 0) {
+        document.getElementById(title).innerHTML += "
+        
+        
+        
+        "
+      }
 
       break;
     }
   }
 }
+
+function startTimer {
+  //setInterval(function(){ alert("Hello"); }, 3000);
+}
+  
+  //jump to place: document.getElementById("jump_to_this_location").scrollIntoView({behavior: 'smooth'});
+  //add a SUBMIT button to know when to collect information
