@@ -4,11 +4,16 @@ script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
 var primaryTheme = document.getElementsByName('primary_theme');
+var title = document.getElementByName('addTitle');
 
 for (var i = 0, length = primaryTheme.length; i < length; i++) {
-  if (primaryTheme[i].checked) {
-    if (primaryTheme[i].value ==
+  if(!(title === "")) {
+    document.getElementById("dropdownStuff").innerHTML += "<a href='/stations/create-new-station" + "/" + title + "'>" + title + "</a>";
     
-    break;
+    if (primaryTheme[i].checked) {
+      if (primaryTheme[i].value == 
+
+      break;
+    }
   }
 }
