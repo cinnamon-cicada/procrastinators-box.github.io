@@ -8,7 +8,7 @@ var title = document.getElementByName('addTitle');
 
 for (var i = 0, length = primaryTheme.length; i < length; i++) {
   if(!(title === "")) {
-    document.getElementById("dropdownStuff").innerHTML += "<a href='/stations/create-new-station" + "/" + title + "'>" + title + "</a>";
+    document.getElementById("dropdownStuff").innerHTML += "<a href='/stations/create-new-station" + "/" + title + "'>" + title + "</a>"; //maybe use something like a long webpage, which gets longer per station, and each station is only "active" if you're on it right then
     
     if (primaryTheme[i].checked) {
       if (primaryTheme[i].value == 
