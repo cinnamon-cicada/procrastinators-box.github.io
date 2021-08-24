@@ -19,7 +19,7 @@ for (var i = 0, length = primaryTheme.length; i < length; i++) {
       //forward pomodoro
       if (i === 0) {
         document.getElementById(title).innerHTML += "
-        
+        <>
         
         
         "
