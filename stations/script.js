@@ -6,31 +6,34 @@ document.getElementsByTagName('head')[0].appendChild(script);
 var primaryTheme = document.getElementsByName('primary_theme');
 var title = document.getElementByName('addTitle');
 
-for (var i = 0, length = primaryTheme.length; i < length; i++) {
-  if(!(title === "")) {
-    
-    var newDiv = document.createElement(title);
-    newDiv.id = title;
-    
-    document.body.appendChild(newDiv);
-    document.getElementById("dropdownStuff").innerHTML += "<a href=#'" + title + "'>" + title + "</a>"; 
-    
-    if (primaryTheme[i].checked) {
-      //forward pomodoro
-      if (i === 0) {
-        document.getElementById(title).innerHTML += "
-        <>
-        
-        
-        "
-      }
+function makeStation() {
+  for (var i = 0, length = primaryTheme.length; i < length; i++) {
+    if(!(title === "")) {
 
-      break;
+      var newDiv = document.createElement(title);
+      newDiv.id = title;
+      newDiv.className = stationsBox;
+
+      document.body.appendChild(newDiv);
+      document.getElementById("dropdownStuff").innerHTML += "<a href=#'" + title + "'>" + title + "</a>"; 
+
+      if (primaryTheme[i].checked) {
+        //forward pomodoro
+        if (i === 0) {
+          document.getElementById(title).innerHTML += "
+          <>
+
+
+          "
+        }
+
+        break;
+      }
     }
   }
 }
 
-function startTimer {
+function startTimer() {
   //setInterval(function(){ alert("Hello"); }, 3000);
 }
   
