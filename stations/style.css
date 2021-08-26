@@ -142,6 +142,11 @@
   background-color: #7de37e;
 }
 
+/*** CREATE NEW STATION ***/
+#submitStation {
+  
+}
+
 /*** TAKE THE QUIZ ***/
 #takeTheQuiz {
   width: 20%;
