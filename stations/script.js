@@ -21,7 +21,6 @@ function makeStation() {
         //forward pomodoro
         if (i === 0) {
           if(
-          
           document.getElementById(title).innerHTML += "<div id='stopwatch'>00:00:00</div> <ul id='buttons'> <li><button onclick='startTimer()'>Start</button></li> <li><button onclick='stopTimer()'>Stop</button></li> <li><button onclick='resetTimer()'>Reset</button></li> </ul>"
         }
 
