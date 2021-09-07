@@ -6,6 +6,8 @@ document.getElementsByTagName('head')[0].appendChild(script);
 var primaryTheme = document.getElementsByName('primary_theme');
 var title = document.getElementByName('addTitle');
 
+var seconds = 0, minutes = 0, hours = 0;
+
 function makeStation() {
   for (var i = 0, length = primaryTheme.length; i < length; i++) {
     if(!(title === "")) {
@@ -20,8 +22,22 @@ function makeStation() {
       if (primaryTheme[i].checked) {
         //forward pomodoro
         if (i === 0) {
-          if(
-          document.getElementById(title).innerHTML += "<div id='stopwatch'>00:00:00</div> <ul id='buttons'> <li><button onclick='startTimer()'>Start</button></li> <li><button onclick='stopTimer()'>Stop</button></li> <li><button onclick='resetTimer()'>Reset</button></li> </ul>"
+          
+          //STOPWATCH
+          document.getElementById(title).innerHTML += "
+            <div id='stopwatch'>00:00:00</div> 
+              <ul id='stopwatchButtons'> 
+                <li><button onclick='startStopwatch()'>Start</button></li> 
+                <li><button onclick='stopStopwatch()'>Stop</button></li> 
+                <li><button onclick='resetStopwatch()'>Reset</button></li> 
+              </ul>"
+            
+            
+            
+            
+            //1) mod 60 the time   2) onclick"startTimer" = call setTimer: at 1000 ms, function calls the displayChanger, which calls setTimer again if stopStopwatch=false
+          //LATER: add randomized array of encouraging comments, time milestones
+            
         }
 
         break;
@@ -30,8 +46,22 @@ function makeStation() {
   }
 }
 
-function startTimer() {
+function add() {
+}
+
+function stopStopwatch() {
+}
+
+function resetStopwatch() {
+}
+
+function startStopwatch() {
   //setInterval(function(){ alert("Hello"); }, 3000);
+  setTimeout(add, 1000);
+}
+
+setTimeout(add, 1000) {
+  
 }
   
   //jump to place: document.getElementById("jump_to_this_location").scrollIntoView({behavior: 'smooth'});
