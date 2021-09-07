@@ -12,6 +12,7 @@ function makeStation() {
   for (var i = 0, length = primaryTheme.length; i < length; i++) {
     if(!(title === "")) {
 
+      //add the thematic customizations too
       var newDiv = document.createElement(title);
       newDiv.id = title;
       newDiv.className = stationsBox;
