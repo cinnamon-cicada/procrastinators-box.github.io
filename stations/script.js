@@ -6,7 +6,7 @@ document.getElementsByTagName('head')[0].appendChild(script);
 var primaryTheme = document.getElementsByName('primary_theme');
 var title = document.getElementByName('addTitle');
 
-var seconds = 0, minutes = 0, hours = 0;
+var seconds = 0, minutes = 0, hours = 0, stopwatchOn = false;
 
 function makeStation() {
   for (var i = 0, length = primaryTheme.length; i < length; i++) {
@@ -48,21 +48,34 @@ function makeStation() {
 }
 
 function add() {
+  seconds++;
+  if(seconds >= 60) {
+    seconds = seconds % 60;
+    minutes++;
+  }
+  if(minutes >= 60) {
+    minutes = minutes % 60;
+    hours++;
+  }
+  document.getElementById(stopwatch).innerHTML = (hours <= 9 ? "0" + hours : hours) + ":" + (minutes <= 9 ? "0" + minutes : minutes) + ":" + (seconds <= 9 ? "0" + seconds : seconds);
+  if(stopwatchOn) {
+    setTimeout(add, 1000);
+  }
 }
 
 function stopStopwatch() {
+  stopwatchOn = false;
 }
 
 function resetStopwatch() {
+  stopwatchOn = false;
+  document.getElementById(stopwatch).innerHTML = "00:00:00";
 }
 
 function startStopwatch() {
   //setInterval(function(){ alert("Hello"); }, 3000);
+  stopwatchOn = true;
   setTimeout(add, 1000);
-}
-
-setTimeout(add, 1000) {
-  
 }
   
   //jump to place: document.getElementById("jump_to_this_location").scrollIntoView({behavior: 'smooth'});
