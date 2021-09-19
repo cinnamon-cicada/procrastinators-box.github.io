@@ -205,9 +205,16 @@
   font-family: 'Patrick Hand', cursive;
 }
 
-#timerBox {
+.timerBox {
   margin-left: 25%;
   margin-right: 25%;
   height: 20%;
   font-size: 40px;
+}
+
+.start {
+}
+.stop {
+}
+.reset {
 }
