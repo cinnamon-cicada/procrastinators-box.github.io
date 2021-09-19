@@ -26,17 +26,16 @@ function makeStation() {
           
           //STOPWATCH
           document.getElementById(title).innerHTML += "
+          <div id='timerBox'>
             <div id='stopwatch'>00:00:00</div> 
               <ul id='stopwatchButtons'> 
                 <li><button onclick='startStopwatch()'>Start</button></li> 
                 <li><button onclick='stopStopwatch()'>Stop</button></li> 
                 <li><button onclick='resetStopwatch()'>Reset</button></li> 
-              </ul>"
+              </ul>
+           </div>"
             
             
-            
-            
-            //1) mod 60 the time   2) onclick"startTimer" = call setTimer: at 1000 ms, function calls the displayChanger, which calls setTimer again if stopStopwatch=false
           //LATER: add randomized array of encouraging comments, time milestones
             
         }
