@@ -25,15 +25,14 @@ function makeStation() {
         if (i === 0) {
           
           //STOPWATCH
-          document.getElementById(title).innerHTML += "<div id='timerBox'> \
+          document.getElementById(title).innerHTML += "<div class='timerBox'> \
             <div id='stopwatch'>00:00:00</div> \
               <ul id='stopwatchButtons'> \
-                <li><button onclick='startStopwatch()'>Start</button></li> \
-                <li><button onclick='stopStopwatch()'>Stop</button></li> \
-                <li><button onclick='resetStopwatch()'>Reset</button></li> \
+                <li><button onclick='startStopwatch()' class='start'>Start</button></li> \
+                <li><button onclick='stopStopwatch()' class='stop'>Stop</button></li> \
+                <li><button onclick='resetStopwatch()' class='reset'>Reset</button></li> \
               </ul> \
            </div>"
-            
             
           //LATER: add randomized array of encouraging comments, time milestones
             
