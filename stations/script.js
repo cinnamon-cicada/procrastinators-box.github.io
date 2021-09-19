@@ -25,14 +25,13 @@ function makeStation() {
         if (i === 0) {
           
           //STOPWATCH
-          document.getElementById(title).innerHTML += "
-          <div id='timerBox'>
-            <div id='stopwatch'>00:00:00</div> 
-              <ul id='stopwatchButtons'> 
-                <li><button onclick='startStopwatch()'>Start</button></li> 
-                <li><button onclick='stopStopwatch()'>Stop</button></li> 
-                <li><button onclick='resetStopwatch()'>Reset</button></li> 
-              </ul>
+          document.getElementById(title).innerHTML += "<div id='timerBox'> \
+            <div id='stopwatch'>00:00:00</div> \
+              <ul id='stopwatchButtons'> \
+                <li><button onclick='startStopwatch()'>Start</button></li> \
+                <li><button onclick='stopStopwatch()'>Stop</button></li> \
+                <li><button onclick='resetStopwatch()'>Reset</button></li> \
+              </ul> \
            </div>"
             
             
