@@ -18,7 +18,7 @@ function makeStation() {
       newDiv.className = stationsBox;
 
       document.body.appendChild(newDiv);
-      document.getElementById("dropdownStuff").innerHTML += "<a href=#'" + title + "'>" + title + "</a>"; 
+      document.getElementById("dropdownStuff").innerHTML += "<a href=#\'" + title + "\'>" + title + "</a>"; 
 
       if (primaryTheme[i].checked) {
         //forward pomodoro
