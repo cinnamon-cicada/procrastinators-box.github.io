@@ -7,6 +7,7 @@ var primaryTheme = document.getElementsByName('primary_theme');
 var title = document.getElementsByName('addTitle');
 
 var seconds = 0, minutes = 0, hours = 0, stopwatchOn = false;
+var stations = [];
 
 function makeStation() {
   for (var i = 0, length = primaryTheme.length; i < length; i++) {
@@ -16,6 +17,8 @@ function makeStation() {
       var newDiv = document.createElement(title);
       newDiv.id = title;
       newDiv.className = stationsBox;
+      stations.push(newDiv);
+      
 
       document.body.appendChild(newDiv);
       document.getElementById("dropdownStuff").innerHTML += "<a href=#\'" + title + "\'>" + title + "</a>"; 
@@ -33,8 +36,6 @@ function makeStation() {
                 <li><button onclick='resetStopwatch()' class='reset'>Reset</button></li> \
               </ul> \
            </div>"
-            
-          //LATER: add randomized array of encouraging comments, time milestones
             
         }
 
@@ -70,7 +71,6 @@ function resetStopwatch() {
 }
 
 function startStopwatch() {
-  //setInterval(function(){ alert("Hello"); }, 3000);
   stopwatchOn = true;
   setTimeout(add, 1000);
 }
