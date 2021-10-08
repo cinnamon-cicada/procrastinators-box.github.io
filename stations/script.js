@@ -10,7 +10,7 @@ var seconds = 0, minutes = 0, hours = 0, stopwatchOn = false;
 var stations = [];
 
 function makeStation() {
-  var length = primaryTheme.length
+  var length = primaryTheme.length;
   for (var i = 0; i < length; i++) {
     if(stationName !== '') {
 
