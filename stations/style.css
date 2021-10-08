@@ -210,8 +210,16 @@
   background-color: white;
 }
 
+#stopwatchButtons {
+  margin-top: 75%;
+  margin-left: 
+}
+
 .start {
   background-color: green;
+  width: 10%;
+  height: 3%;
+  
 }
 .stop {
   background-color: red;
