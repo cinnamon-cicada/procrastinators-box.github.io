@@ -10,10 +10,10 @@ var seconds = 0, minutes = 0, hours = 0, stopwatchOn = false;
 var stations = [];
 
 function makeStation() {
-  for (var i = 0, length = primaryTheme.length; i < length; i++) {
-    if(stationName !== "") {
+  var length = primaryTheme.length
+  for (var i = 0; i < length; i++) {
+    if(stationName !== '') {
 
-      //add the thematic customizations too
       var newDiv = document.createElement(stationName);
       newDiv.id = stationName;
       newDiv.className = stationsBox;
