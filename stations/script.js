@@ -4,32 +4,32 @@ script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
 var primaryTheme = document.getElementsByName('primary_theme');
-var title = document.getElementsByName('addTitle');
+var stationName = document.getElementsByName('addTitle');
 
 var seconds = 0, minutes = 0, hours = 0, stopwatchOn = false;
 var stations = [];
 
 function makeStation() {
   for (var i = 0, length = primaryTheme.length; i < length; i++) {
-    if(!(title === "")) {
+    if(!(stationName === "")) {
 
       //add the thematic customizations too
-      var newDiv = document.createElement(title);
-      newDiv.id = title;
+      var newDiv = document.createElement(stationName);
+      newDiv.id = stationName;
       newDiv.className = stationsBox;
       stations.push(newDiv);
       
 
       document.body.appendChild(newDiv);
-      document.getElementById("dropdownStuff").innerHTML += "<a href=#\'" + title + "\'>" + title + "</a>"; 
+      document.getElementById("dropdownStuff").innerHTML += "<a href=#\'" + stationName + "\'>" + stationName + "</a>"; 
 
       if (primaryTheme[i].checked) {
         //forward pomodoro
         if (i === 0) {
           
           //STOPWATCH
-          document.getElementById(title).innerHTML += "<div class='timerBox'> \
-            <div id='stopwatch'>00:00:00</div> \
+          document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
+            <div class='timeDisplay'>00:00:00</div> \
               <ul id='stopwatchButtons'> \
                 <li><button onclick='startStopwatch()' class='start'>Start</button></li> \
                 <li><button onclick='stopStopwatch()' class='stop'>Stop</button></li> \
