@@ -195,11 +195,8 @@
 }
 
 /*** POMODORO MAIN THEME ***/
-.stationsBox {
-  //each box and how big it is - screen-sized
-}
 
-#stopwatch {
+#timeDisplay {
   margin-top: 15%;
   font-size: 40px;
   font-family: 'Patrick Hand', cursive;
@@ -210,11 +207,15 @@
   margin-right: 25%;
   height: 20%;
   font-size: 40px;
+  background-color: white;
 }
 
 .start {
+  background-color: green;
 }
 .stop {
+  background-color: red;
 }
 .reset {
+  background-color: gray;
 }
