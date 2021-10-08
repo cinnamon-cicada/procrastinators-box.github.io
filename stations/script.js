@@ -11,7 +11,7 @@ var stations = [];
 
 function makeStation() {
   for (var i = 0, length = primaryTheme.length; i < length; i++) {
-    if(!(stationName === "")) {
+    if(stationName !== "") {
 
       //add the thematic customizations too
       var newDiv = document.createElement(stationName);
