@@ -38,7 +38,7 @@ console.log("we have a station name!: " + stationName);
           
           //STOPWATCH
           document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
-            <div class='timeDisplay'>00:00:00</div> \
+            <div id='timeDisplay'>00:00:00</div> \
               <ul id='stopwatchButtons'> \
                 <li><button onclick='startStopwatch()' class='start'>Start</button></li> \
                 <li><button onclick='stopStopwatch()' class='stop'>Stop</button></li> \
@@ -64,7 +64,7 @@ function add() {
     minutes = minutes % 60;
     hours++;
   }
-  document.getElementById('stopwatch').innerHTML = (hours <= 9 ? "0" + hours : hours) + ":" + (minutes <= 9 ? "0" + minutes : minutes) + ":" + (seconds <= 9 ? "0" + seconds : seconds);
+  document.getElementById('timeDisplay').innerHTML = (hours <= 9 ? "0" + hours : hours) + ":" + (minutes <= 9 ? "0" + minutes : minutes) + ":" + (seconds <= 9 ? "0" + seconds : seconds);
   if(stopwatchOn) {
     setTimeout(add, 1000);
   }
@@ -76,7 +76,7 @@ function stopStopwatch() {
 
 function resetStopwatch() {
   stopwatchOn = false;
-  document.getElementById(stopwatch).innerHTML = "00:00:00";
+  document.getElementById('timeDisplay').innerHTML = "00:00:00";
 }
 
 function startStopwatch() {
