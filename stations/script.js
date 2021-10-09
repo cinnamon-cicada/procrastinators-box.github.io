@@ -25,7 +25,7 @@ console.log("we have a station name!: " + stationName);
       
       var newDiv = document.createElement(stationName);
       newDiv.id = stationName;
-      newDiv.className = stationsBox;
+      newDiv.className = 'stationsBox';
       stations.push(newDiv);
       
 
