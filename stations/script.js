@@ -10,10 +10,19 @@ var seconds = 0, minutes = 0, hours = 0, stopwatchOn = false;
 var stations = [];
 
 function makeStation() {
+
+console.log("station make entered!");
+  
   var length = primaryTheme.length;
+  
   for (var i = 0; i < length; i++) {
+    
+console.log("loop entered, length: " + length);
+    
     if(stationName !== '') {
 
+console.log("we have a station name!: " + stationName);      
+      
       var newDiv = document.createElement(stationName);
       newDiv.id = stationName;
       newDiv.className = stationsBox;
