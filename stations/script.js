@@ -77,6 +77,9 @@ function stopStopwatch() {
 function resetStopwatch() {
   stopwatchOn = false;
   document.getElementById('timeDisplay').innerHTML = "00:00:00";
+  hours = 0;
+  minutes = 0;
+  seconds = 0;
 }
 
 function startStopwatch() {
