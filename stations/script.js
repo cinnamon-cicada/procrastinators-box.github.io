@@ -64,7 +64,7 @@ function add() {
     minutes = minutes % 60;
     hours++;
   }
-  document.getElementById(stopwatch).innerHTML = (hours <= 9 ? "0" + hours : hours) + ":" + (minutes <= 9 ? "0" + minutes : minutes) + ":" + (seconds <= 9 ? "0" + seconds : seconds);
+  document.getElementById('stopwatch').innerHTML = (hours <= 9 ? "0" + hours : hours) + ":" + (minutes <= 9 ? "0" + minutes : minutes) + ":" + (seconds <= 9 ? "0" + seconds : seconds);
   if(stopwatchOn) {
     setTimeout(add, 1000);
   }
