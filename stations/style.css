@@ -198,7 +198,7 @@
 
 #timeDisplay {
   margin-top: 15%;
-  font-size: 40px;
+  font-size: 70px;
   font-family: 'Patrick Hand', cursive;
   text-alignment: center;
 }
@@ -209,7 +209,6 @@
   padding-top: 3%;
   padding-bottom: 3%;
   height: 20%;
-  font-size: 40px;
   background-color: white;
 }
 
