@@ -4,7 +4,7 @@ script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
 var primaryTheme = document.getElementsByName('primary_theme');
-var stationName = document.getElementsByName('addTitle');
+var stationName = document.getElementById('addTitle').value;
 
 var seconds = 0, minutes = 0, hours = 0, stopwatchOn = false;
 var stations = [];
