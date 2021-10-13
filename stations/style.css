@@ -201,19 +201,19 @@
   font-size: 70px;
   font-family: 'Patrick Hand', cursive;
   text-align: center;
+  height: 20%;
 }
 
 .timerBox {
   margin-left: 20%;
   margin-right: 20%;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   height: 20%;
   background-color: white;
 }
 
 #stopwatchButtons {
-  margin-top: 75%;
   margin-right: 17.5%;
 }
 
