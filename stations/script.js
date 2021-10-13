@@ -39,9 +39,9 @@ console.log("we have a station name!: " + stationName);
           //STOPWATCH
           document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
             <div id='timeDisplay'>00:00:00</div> \
-                <button onclick='startStopwatch()' class='start'>Start</button></li> \
-                <button onclick='stopStopwatch()' class='stop'>Stop</button></li> \
-                <button onclick='resetStopwatch()' class='reset'>Reset</button></li> \
+                <button onclick='startStopwatch()' class='start'>Start</button> \
+                <button onclick='stopStopwatch()' class='stop'>Stop</button> \
+                <button onclick='resetStopwatch()' class='reset'>Reset</button> \
            </div>"
             
         }
