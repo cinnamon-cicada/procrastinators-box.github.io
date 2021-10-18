@@ -17,11 +17,7 @@ console.log("station make entered!");
   
   for (var i = 0; i < length; i++) {
     
-console.log("loop entered, length: " + length);
-    
     if(stationName !== '') {
-
-console.log("we have a station name!: " + stationName);      
       
       var newDiv = document.createElement(stationName);
       newDiv.id = stationName;
@@ -37,6 +33,7 @@ console.log("we have a station name!: " + stationName);
         if (i === 0) {
           
           //STOPWATCH
+          getTime();
           document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
             <div id='timeDisplay'>00:00:00</div> \
                 <button onclick='startStopwatch()' class='start'>Start</button> \
@@ -45,11 +42,25 @@ console.log("we have a station name!: " + stationName);
            </div>"
             
         }
+        
+        else if (i===1) {
+          //COUNTDOWN
+          getTime();
+        }
 
         break;
       }
     }
   }
+}
+
+function getTime() {
+  document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
+            <div id='timeDisplay'>00:00:00</div> \
+                <button onclick='startStopwatch()' class='start'>Start</button> \
+                <button onclick='stopStopwatch()' class='stop'>Stop</button> \
+                <button onclick='resetStopwatch()' class='reset'>Reset</button> \
+           </div>"
 }
 
 function add() {
