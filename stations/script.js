@@ -6,7 +6,7 @@ document.getElementsByTagName('head')[0].appendChild(script);
 var primaryTheme = document.getElementsByName('primary_theme');
 var stationName = document.getElementById('addTitle').value;
 
-var seconds = 0, minutes = 0, hours = 0, stopwatchOn = false;
+var seconds = 0, minutes = 0, hours = 0, timerOn = false;
 var stations = [];
 var noRepeats = true;
 
@@ -28,7 +28,7 @@ console.log("station make entered!");
   
   for (var i = 0; i < length; i++) {
     
-    if(stationName !== '' && noRepeats = true) {
+    if(stationName !== '' && noRepeats === true) {
       
       var newDiv = document.createElement(stationName);
       newDiv.id = stationName;
@@ -62,9 +62,9 @@ console.log("station make entered!");
           var time = document.getElementById('timerTime').value;
           document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
             <div id='timeDisplay'>00:00:00</div> \
-                <button onclick='startStopwatch()' class='start'>Start</button> \
-                <button onclick='stopStopwatch()' class='stop'>Stop</button> \
-                <button onclick='resetStopwatch()' class='reset'>Reset</button> \
+                <button onclick='startCountdown()' class='start'>Start</button> \
+                <button onclick='stopTimer()' class='stop'>Stop</button> \
+                <button onclick='resetTimer()' class='reset'>Reset</button> \
            </div>"
         }
 
@@ -90,17 +90,17 @@ function add() {
     hours++;
   }
   document.getElementById('timeDisplay').innerHTML = (hours <= 9 ? "0" + hours : hours) + ":" + (minutes <= 9 ? "0" + minutes : minutes) + ":" + (seconds <= 9 ? "0" + seconds : seconds);
-  if(stopwatchOn) { //WIP: and if time is less than set time
+  if(timerOn) { //WIP: and if time is less than set time
     setTimeout(add, 995);
   }
 }
 
-function stopStopwatch() {
-  stopwatchOn = false;
+function stopTimer() {
+  timerOn = false;
 }
 
 function resetStopwatch() {
-  stopwatchOn = false;
+  timerOn = false;
   document.getElementById('timeDisplay').innerHTML = "00:00:00";
   hours = 0;
   minutes = 0;
@@ -108,7 +108,7 @@ function resetStopwatch() {
 }
 
 function startStopwatch() {
-  stopwatchOn = true;
+  timerOn = true;
   setTimeout(add, 1000);
 }
   
