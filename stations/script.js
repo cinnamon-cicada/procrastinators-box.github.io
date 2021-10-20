@@ -79,7 +79,7 @@ function getTime(stopOrStartAt) {
          <input type="text" id="timerTime"> <br>'
 }
 
-function add() {
+function addTimer() {
   seconds++;
   if(seconds >= 60) {
     seconds = seconds % 60;
@@ -91,9 +91,15 @@ function add() {
   }
   document.getElementById('timeDisplay').innerHTML = (hours <= 9 ? "0" + hours : hours) + ":" + (minutes <= 9 ? "0" + minutes : minutes) + ":" + (seconds <= 9 ? "0" + seconds : seconds);
   if(timerOn) { //WIP: and if time is less than set time
-    setTimeout(add, 995);
+    setTimeout(addTimer, 995);
   }
 }
+//WIP - for the countdown
+subtractTimer() {
+  
+}
+
+
 
 function stopTimer() {
   timerOn = false;
@@ -109,7 +115,7 @@ function resetStopwatch() {
 
 function startStopwatch() {
   timerOn = true;
-  setTimeout(add, 1000);
+  setTimeout(addTimer, 1000);
 }
   
   //jump to place: document.getElementById("jump_to_this_location").scrollIntoView({behavior: 'smooth'});
