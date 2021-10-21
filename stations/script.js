@@ -49,8 +49,8 @@ console.log("station make entered!");
           document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
             <div id='timeDisplay'>00:00:00</div> \
                 <button onclick='startStopwatch()' class='start'>Start</button> \
-                <button onclick='stopStopwatch()' class='stop'>Stop</button> \
-                <button onclick='resetStopwatch()' class='reset'>Reset</button> \
+                <button onclick='stopTimer()' class='stop'>Stop</button> \
+                <button onclick='resetTimer()' class='reset'>Reset</button> \
            </div>"
             
         }
@@ -96,7 +96,19 @@ function addTimer() {
 }
 //WIP - for the countdown
 subtractTimer() {
-  
+  seconds--;
+  if(seconds <= -1) {
+    seconds = 60 + seconds;
+    minutes--;
+  }
+  if(minutes <= -1) {
+    minutes = 60 + minutes;
+    hours--;
+  }
+  document.getElementById('timeDisplay').innerHTML = (hours <= 9 ? "0" + hours : hours) + ":" + (minutes <= 9 ? "0" + minutes : minutes) + ":" + (seconds <= 9 ? "0" + seconds : seconds);
+  if(timerOn) { //WIP: and if time is less than set time
+    setTimeout(addTimer, 995);
+  }
 }
 
 
@@ -105,7 +117,7 @@ function stopTimer() {
   timerOn = false;
 }
 
-function resetStopwatch() {
+function resetTimer() {
   timerOn = false;
   document.getElementById('timeDisplay').innerHTML = "00:00:00";
   hours = 0;
@@ -115,7 +127,12 @@ function resetStopwatch() {
 
 function startStopwatch() {
   timerOn = true;
-  setTimeout(addTimer, 1000);
+  setTimeout(addTimer, 995);
+}
+
+function startCountdown() {
+  timerOn = true;
+  setTimeout(subtractTimer, 995);
 }
   
   //jump to place: document.getElementById("jump_to_this_location").scrollIntoView({behavior: 'smooth'});
