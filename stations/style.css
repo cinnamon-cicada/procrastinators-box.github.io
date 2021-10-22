@@ -149,13 +149,13 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #7de37e;
+  background-color: #59f05b;
   
 }
 
 /*** CREATE NEW STATION ***/
 #submitStation {
-  background-color: #c8c7c9;
+  background-color: #59f05b;
   width: 10%;
   height: 2.5%;
   color: white;
@@ -168,7 +168,7 @@
 /*** TAKE THE QUIZ ***/
 #takeTheQuiz {
   width: 20%;
-  background-color: #c8c7c9;
+  background-color: #2b9dff;
   padding: 22px;
   border: none;
   cursor: pointer;
