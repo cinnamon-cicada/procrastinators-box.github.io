@@ -69,6 +69,9 @@ console.log("station make entered!");
         }
         
         else if (i===2) {
+          document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
+            <textarea rows='20' cols='80' id='list'> </textarea> \
+           </div>"
         }
 
         break;
