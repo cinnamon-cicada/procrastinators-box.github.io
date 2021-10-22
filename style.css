@@ -141,14 +141,14 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #59f05b;
+  background-color: #bfbfbf;
   
 }
 
 /*** TAKE THE QUIZ ***/
 #takeTheQuiz {
   width: 20%;
-  background-color: #59f05b;
+  background-color: #bfbfbf;
   padding: 22px;
   border: none;
   cursor: pointer;
