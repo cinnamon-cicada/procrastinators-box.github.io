@@ -59,9 +59,10 @@ console.log("station make entered!");
           //COUNTDOWN
           //WIP
           getTime("Start");
-          var time = document.getElementById('timerTime').value;
+          var min = document.getElementById('inputMinutes').value;
+          var h = document.getElementById('inputHours').value;
           document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
-            <div id='timeDisplay'>00:00:00</div> \
+            <div id='timeDisplay'>" + h + ":" + min + ":00" + "</div> \
                 <button onclick='startCountdown()' class='start'>Start</button> \
                 <button onclick='stopTimer()' class='stop'>Stop</button> \
                 <button onclick='resetTimer()' class='reset'>Reset</button> \
@@ -75,8 +76,11 @@ console.log("station make entered!");
 }
 
 function getTime(stopOrStartAt) {
-  document.getElementById('pomodoroBackward').innerHTML += '<label for="timerTime" class="bodyText">' + stopOrStartAt + ' at: &nbsp;&nbsp;&nbsp;&nbsp;</label> \
-         <input type="text" id="timerTime"> <br>'
+  document.getElementById('pomodoroBackward').innerHTML += '<p> class="bodyText">' + stopOrStartAt + ' at: &nbsp;&nbsp;&nbsp;&nbsp;</p> <br> \
+         <p class="bodyText">Hours: </p> \
+         <input type="text" id="inputHours"> <br> \
+         <p class="bodyText">Minutes: </p> \
+         <input type="text" id="inputMinutes"> <br>'
 }
 
 function addTimer() {
@@ -94,7 +98,7 @@ function addTimer() {
     setTimeout(addTimer, 995);
   }
 }
-//WIP - for the countdown
+
 subtractTimer() {
   seconds--;
   if(seconds <= -1) {
@@ -106,8 +110,8 @@ subtractTimer() {
     hours--;
   }
   document.getElementById('timeDisplay').innerHTML = (hours <= 9 ? "0" + hours : hours) + ":" + (minutes <= 9 ? "0" + minutes : minutes) + ":" + (seconds <= 9 ? "0" + seconds : seconds);
-  if(timerOn) { //WIP: and if time is less than set time
-    setTimeout(addTimer, 995);
+  if(timerOn && (hours > 0 || minutes > 0 || seconds > 0)) { 
+    setTimeout(subtractTimer, 1005);
   }
 }
 
