@@ -56,8 +56,7 @@ console.log("station make entered!");
         }
         
         else if (i===1) {
-          //COUNTDOWN
-          //WIP
+//EDIT
           getTime("Start");
           var min = document.getElementById('inputMinutes').value;
           var h = document.getElementById('inputHours').value;
@@ -67,6 +66,9 @@ console.log("station make entered!");
                 <button onclick='stopTimer()' class='stop'>Stop</button> \
                 <button onclick='resetTimer()' class='reset'>Reset</button> \
            </div>"
+        }
+        
+        else if (i===2) {
         }
 
         break;
