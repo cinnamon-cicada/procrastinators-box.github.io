@@ -96,7 +96,7 @@ function addTimer() {
     hours++;
   }
   document.getElementById('timeDisplay').innerHTML = (hours <= 9 ? "0" + hours : hours) + ":" + (minutes <= 9 ? "0" + minutes : minutes) + ":" + (seconds <= 9 ? "0" + seconds : seconds);
-  if(timerOn) { //WIP: and if time is less than set time
+  if(timerOn) {
     setTimeout(addTimer, 995);
   }
 }
