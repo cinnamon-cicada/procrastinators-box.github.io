@@ -38,13 +38,22 @@ console.log("station make entered!");
 
       document.body.appendChild(newDiv);
       document.getElementById("dropdownStuff").innerHTML += "<a href=#\'" + stationName + "\'>" + stationName + "</a>"; 
+      
+      function getTime(stopOrStartAt, which) {
+        
+         document.getElementById('inputA').innerHTML += '<p> class="bodyText">' + stopOrStartAt + ' at: &nbsp;&nbsp;&nbsp;&nbsp;</p> <br> \
+         <p class="bodyText">Hours: </p> \
+         <input type="text" id="inputHours"> <br> \
+         <p class="bodyText">Minutes: </p> \
+         <input type="text" id="inputMinutes"> <br>'
+}
 
       if (primaryTheme[i].checked) {
         //forward pomodoro
         if (i === 0) {
           
           //STOPWATCH
-          getTime("Stop");
+          getTime("Stop", 1);
           var time = document.getElementById('timerTime').value;
           document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
             <div id='timeDisplay'>00:00:00</div> \
@@ -57,7 +66,7 @@ console.log("station make entered!");
         
         else if (i===1) {
 //EDIT
-          getTime("Start");
+          getTime("Start", 1);
           var min = document.getElementById('inputMinutes').value;
           var h = document.getElementById('inputHours').value;
           document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
@@ -78,14 +87,6 @@ console.log("station make entered!");
       }
     }
   }
-}
-
-function getTime(stopOrStartAt) {
-  document.getElementById('pomodoroBackward').innerHTML += '<p> class="bodyText">' + stopOrStartAt + ' at: &nbsp;&nbsp;&nbsp;&nbsp;</p> <br> \
-         <p class="bodyText">Hours: </p> \
-         <input type="text" id="inputHours"> <br> \
-         <p class="bodyText">Minutes: </p> \
-         <input type="text" id="inputMinutes"> <br>'
 }
 
 function addTimer() {
