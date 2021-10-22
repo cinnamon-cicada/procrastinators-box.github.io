@@ -94,7 +94,7 @@
   text-align: center;
   width: 100%;
   height: 100%;
-  background-color: #59f05b;
+  background-color: #bfbfbf;
   color: white;
   font-size: 13px;
   font-family: 'Patrick Hand', cursive;
@@ -149,13 +149,13 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #59f05b;
+  background-color: #bfbfbf;
   
 }
 
 /*** CREATE NEW STATION ***/
 #submitStation {
-  background-color: #59f05b;
+  background-color: #bfbfbf;
   width: 10%;
   height: 2.5%;
   color: white;
