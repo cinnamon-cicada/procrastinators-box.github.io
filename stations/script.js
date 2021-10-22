@@ -104,7 +104,7 @@ function addTimer() {
   }
 }
 
-subtractTimer() {
+function subtractTimer() {
   seconds--;
   if(seconds <= -1) {
     seconds = 60 + seconds;
