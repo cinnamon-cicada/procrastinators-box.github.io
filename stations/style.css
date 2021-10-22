@@ -155,7 +155,7 @@
 
 /*** CREATE NEW STATION ***/
 #submitStation {
-  background-color: #59f05b;
+  background-color: #c8c7c9;
   width: 10%;
   height: 2.5%;
   color: white;
@@ -168,7 +168,7 @@
 /*** TAKE THE QUIZ ***/
 #takeTheQuiz {
   width: 20%;
-  background-color: #59f05b;
+  background-color: #c8c7c9;
   padding: 22px;
   border: none;
   cursor: pointer;
@@ -232,4 +232,9 @@
   width: 7.5%;
   height: 30px;
   margin-left: 11.25%;
+}
+
+//LIST
+#list {
+  background-color: #ffffbf;
 }
