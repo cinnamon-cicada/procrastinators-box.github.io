@@ -39,6 +39,8 @@ console.log("station make entered!");
   }
   
   for (var i = 0; i < length; i++) {
+       
+       console.log("loop entered， loop size: " + length);
     
     if(stationName !== '' && noRepeats === true) {
       
