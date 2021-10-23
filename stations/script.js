@@ -55,6 +55,7 @@ console.log("station make entered!");
 
       if (primaryTheme[i].checked) {
         //forward pomodoro
+           console.log('yes it is checked');
         if (i === 0) {
           
           //STOPWATCH
