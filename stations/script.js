@@ -14,9 +14,9 @@ function getTime(stopOrStartAt, which) {
      console.log("getTime entered!! :D");
      if(which === 1) {
           console.log("which: " + which);
-           document.getElementById('inputA').innerHTML += '<p class="bodyText">' + stopOrStartAt + ' at: &nbsp;&nbsp;&nbsp;&nbsp;</p> <br> \
+           document.getElementById('inputA').innerHTML += '<p class="bodyText">' + stopOrStartAt + ' at: &nbsp;&nbsp;&nbsp;&nbsp;</p> \
            <p class="bodyText">Hours: </p> \
-           <input type="text" id="inputHours"> <br> \
+           <input type="text" id="inputHours"> \
            <p class="bodyText">Minutes: </p> \
            <input type="text" id="inputMinutes"> <br>'
      }
