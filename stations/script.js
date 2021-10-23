@@ -10,6 +10,16 @@ var seconds = 0, minutes = 0, hours = 0, timerOn = false;
 var stations = [];
 var noRepeats = true;
 
+function getTime(stopOrStartAt, which) {
+     if(which === 1) {
+           document.getElementById('inputA').innerHTML += '<p> class="bodyText">' + stopOrStartAt + ' at: &nbsp;&nbsp;&nbsp;&nbsp;</p> <br> \
+           <p class="bodyText">Hours: </p> \
+           <input type="text" id="inputHours"> <br> \
+           <p class="bodyText">Minutes: </p> \
+           <input type="text" id="inputMinutes"> <br>'
+     }
+}
+
 function makeStation() {
 
 console.log("station make entered!");
@@ -38,15 +48,6 @@ console.log("station make entered!");
 
       document.body.appendChild(newDiv);
       document.getElementById("dropdownStuff").innerHTML += "<a href=#\'" + stationName + "\'>" + stationName + "</a>"; 
-      
-      function getTime(stopOrStartAt, which) {
-        
-         document.getElementById('inputA').innerHTML += '<p> class="bodyText">' + stopOrStartAt + ' at: &nbsp;&nbsp;&nbsp;&nbsp;</p> <br> \
-         <p class="bodyText">Hours: </p> \
-         <input type="text" id="inputHours"> <br> \
-         <p class="bodyText">Minutes: </p> \
-         <input type="text" id="inputMinutes"> <br>'
-}
 
       if (primaryTheme[i].checked) {
         //forward pomodoro
