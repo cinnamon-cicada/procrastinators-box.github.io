@@ -10,15 +10,23 @@ var seconds = 0, minutes = 0, hours = 0, timerOn = false;
 var stations = [];
 var noRepeats = true;
 
+function insertAfter(referenceNode, newNode) {
+     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
+
 function getTime(stopOrStartAt, which) {
      console.log("getTime entered!! :D");
      if(which === 1) {
           console.log("which: " + which);
-           document.getElementById('inputA').innerHTML += '<p class="bodyText">' + stopOrStartAt + ' at: &nbsp;&nbsp;&nbsp;&nbsp;</p> \
-           <label class="bodyText" for="inputHours">Hours: </label> \
-           <input type="text" id="inputHours"> <br> \
-           <label class="bodyText" for="inputMinutes">Minutes: </label> \
-           <input type="text" id="inputMinutes"> <br>'
+          let elem = document.createElement("inputTimeSpecs");
+          elem.innerHTML = '<p class="bodyText">' + stopOrStartAt + ' at: &nbsp;&nbsp;&nbsp;&nbsp;</p> \
+          <label class="bodyText" for="inputHours">Hours: </label> \
+          <input type="text" id="inputHours" name="inputTime"> <br> \
+          <label class="bodyText" for="inputMinutes">Minutes: </label> \
+          <input type="text" id="inputMinutes" name="inputTime"> <br>'
+          let div = document.getElementById("inputA");
+          insertAfter(div, elem);
+          
      }
 }
 
