@@ -11,7 +11,9 @@ var stations = [];
 var noRepeats = true;
 
 function getTime(stopOrStartAt, which) {
+     console.log("getTime entered");
      if(which === 1) {
+          console.log("which: " + which);
            document.getElementById('inputA').innerHTML += '<p> class="bodyText">' + stopOrStartAt + ' at: &nbsp;&nbsp;&nbsp;&nbsp;</p> <br> \
            <p class="bodyText">Hours: </p> \
            <input type="text" id="inputHours"> <br> \
@@ -24,6 +26,7 @@ if (primaryTheme[0].checked) {
      getTime("Stop", 1);
 } else if (primaryTheme[1].checked) {
      getTime("Start", 1);
+     console.log("countdown is checked");
 }
 
 function makeStation() {
@@ -35,7 +38,7 @@ console.log("station make entered!");
     for (var i = 0; i < stations.length; i++) {
       for (var k = 1; k < stations.length; k++) {
         if (stations[i]===stations[k]) {
-          console.log("error!!"); //make it more fancy later!!
+          console.log("error!!"); //WIP: make it more fancy later!!
           noRepeats = false;
         }
       }
@@ -72,6 +75,7 @@ console.log("station make entered!");
         
         else if (i===1) {
 //EDIT
+          console.log("so you chose to count down?");
           var min = document.getElementById('inputMinutes').value;
           var h = document.getElementById('inputHours').value;
           document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
