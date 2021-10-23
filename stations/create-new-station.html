@@ -42,9 +42,9 @@
          <input type="text" id="addTitle" name="addTitle"> <br>
 
          <p class="bodyText">Choose a primary theme:</p>
-         <input type="radio" id="pomodoroForward" name="primary_theme">
+         <input type="radio" id="pomodoroForward" name="primary_theme" onclick="getTime('Stop', 1)">
          <label for="pomodoroForwardLabel" class="bodyText">Pomodoro: Stopwatch </label> <br>
-         <input type="radio" id="pomodoroBackward" name="primary_theme">
+         <input type="radio" id="pomodoroBackward" name="primary_theme" onclick="getTime('Start', 1)">
          <label for="pomodoroBackwardLabel" class="bodyText">Pomodoro: Countdown</label> <br>
          <!-- placeholder for TEXT, VOICE CHAT -->
          <input type="radio" id="list" name="primary_theme">
