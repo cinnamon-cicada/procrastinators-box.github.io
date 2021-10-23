@@ -40,7 +40,7 @@ console.log("station make entered!");
   
   for (var i = 0; i < length; i++) {
        
-       console.log("loop entered， loop size: " + length);
+       console.log("loop entered， i: " + i + " " + primaryTheme[i].checked);
     
     if(stationName !== '' && noRepeats === true) {
       
