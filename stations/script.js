@@ -56,7 +56,7 @@ console.log("station make entered!");
       if (primaryTheme[i].checked) {
         //forward pomodoro
            console.log('yes it is checked');
-        if (i === 0) {
+        if (i == 0) {
           
           //STOPWATCH
           var time = document.getElementById('timerTime').value;
@@ -69,10 +69,16 @@ console.log("station make entered!");
             
         }
         
-        else if (i === 1) {
+        else if (i == 1) {
           console.log("so you chose to count down?");
-          var min = document.getElementById('inputMinutes').value;
-          var h = document.getElementById('inputHours').value;
+          var min = document.getElementById('inputMinutes').value || "00";
+          var h = document.getElementById('inputHours').value || "00";
+          if(min == 0) {
+               min = "00";
+          }
+          if(h == 0) {
+               h = "00";
+          }
           document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
             <div id='timeDisplay'>" + h + ":" + min + ":00" + "</div> \
                 <button onclick='startCountdown()' class='start'>Start</button> \
@@ -81,7 +87,7 @@ console.log("station make entered!");
            </div>"
         }
         
-        else if (i===2) {
+        else if (i == 2) {
           document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
             <textarea rows='20' cols='80' id='list'> </textarea> \
            </div>"
