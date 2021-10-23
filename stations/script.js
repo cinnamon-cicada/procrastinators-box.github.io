@@ -68,8 +68,7 @@ console.log("station make entered!");
             
         }
         
-        else if (i===1) {
-//EDIT
+        else if (i === 1) {
           console.log("so you chose to count down?");
           var min = document.getElementById('inputMinutes').value;
           var h = document.getElementById('inputHours').value;
