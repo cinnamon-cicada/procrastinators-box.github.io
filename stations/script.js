@@ -20,6 +20,13 @@ function getTime(stopOrStartAt, which) {
      }
 }
 
+if(primaryTheme[0].checked) {
+     getTime("Stop", 1);
+}
+else if(primaryTheme[1].checked) {
+     getTime("Start", 1);
+}
+
 function makeStation() {
 
 console.log("station make entered!");
@@ -54,7 +61,6 @@ console.log("station make entered!");
         if (i === 0) {
           
           //STOPWATCH
-          getTime("Stop", 1);
           var time = document.getElementById('timerTime').value;
           document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
             <div id='timeDisplay'>00:00:00</div> \
@@ -67,7 +73,6 @@ console.log("station make entered!");
         
         else if (i===1) {
 //EDIT
-          getTime("Start", 1);
           var min = document.getElementById('inputMinutes').value;
           var h = document.getElementById('inputHours').value;
           document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
