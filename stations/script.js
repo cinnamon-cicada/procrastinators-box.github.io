@@ -11,7 +11,7 @@ var stations = [];
 var noRepeats = true;
 
 function getTime(stopOrStartAt, which) {
-     console.log("getTime entered");
+     console.log("getTime entered!! :D");
      if(which === 1) {
           console.log("which: " + which);
            document.getElementById('inputA').innerHTML += '<p class="bodyText">' + stopOrStartAt + ' at: &nbsp;&nbsp;&nbsp;&nbsp;</p> <br> \
@@ -20,13 +20,6 @@ function getTime(stopOrStartAt, which) {
            <p class="bodyText">Minutes: </p> \
            <input type="text" id="inputMinutes"> <br>'
      }
-}
-
-if (primaryTheme[0].checked) {
-     getTime("Stop", 1);
-} else if (primaryTheme[1].checked) {
-     getTime("Start", 1);
-     console.log("countdown is checked");
 }
 
 function makeStation() {
