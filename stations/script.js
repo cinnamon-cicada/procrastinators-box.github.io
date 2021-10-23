@@ -20,10 +20,9 @@ function getTime(stopOrStartAt, which) {
      }
 }
 
-if(primaryTheme[0].checked) {
+if (primaryTheme[0].checked) {
      getTime("Stop", 1);
-}
-else if(primaryTheme[1].checked) {
+} else if (primaryTheme[1].checked) {
      getTime("Start", 1);
 }
 
