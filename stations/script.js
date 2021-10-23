@@ -16,7 +16,7 @@ function getTime(stopOrStartAt, which) {
           console.log("which: " + which);
            document.getElementById('inputA').innerHTML += '<p class="bodyText">' + stopOrStartAt + ' at: &nbsp;&nbsp;&nbsp;&nbsp;</p> \
            <label class="bodyText" for="inputHours">Hours: </label> \
-           <input type="text" id="inputHours"> \
+           <input type="text" id="inputHours"> <br> \
            <label class="bodyText" for="inputMinutes">Minutes: </label> \
            <input type="text" id="inputMinutes"> <br>'
      }
