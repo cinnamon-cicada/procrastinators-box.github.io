@@ -17,11 +17,13 @@
     
      <div class="header" class="titleText">
        <div id="logoHeaderLeft" class="titleText">
-         <h2 class="headerText" class="titleText"><a href="https://procrastinators-box.github.io"> THE </a></h2>
-         <h2 class="headerText" class="titleText"><a href="https://procrastinators-box.github.io"> PROCRASTINATOR'S BOX </a></h2>
+         <h2 class="headerText" class="titleText"> THE </h2>
+         <h2 class="headerText" class="titleText"> PROCRASTINATOR'S BOX </h2>
        </div>
        <div id="logoHeaderRight">
-         <img src="Logo - symbol.png" alt="The toolbox logo" id="logoSymbol">
+         <a href="https://procrastinators-box.github.io">
+            <img src="Logo - symbol.png" alt="The toolbox logo" id="logoSymbol">
+         </a>
        </div>
        
        <form method="get" action="/stations">
@@ -36,7 +38,7 @@
            </div>
        </div>
         
-       <form id="form">
+       <form class="indentContent">
          <br>
          <label for="addTitle" class="bodyText">Title (necessary): &nbsp;&nbsp;&nbsp;&nbsp;</label>
          <input type="text" id="addTitle" name="addTitle"> <br>
@@ -75,7 +77,7 @@
          
        </form> 
     
-    <button onclick="makeStation()" id="submitStation">Submit</button>
+    <button onclick="makeStation()" id="submitStation" class="indentContent">Submit</button>
 
     <script src="script.js"></script>
   </body>
