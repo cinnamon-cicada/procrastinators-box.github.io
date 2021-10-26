@@ -165,9 +165,9 @@
   margin-top: 2%;
 }
 
-#form {
+.indentContent {
   box-sizing: border-box;
-  padding: 5%;
+  padding: 0px 2.5%;
 }
 
 /*** TAKE THE QUIZ ***/
