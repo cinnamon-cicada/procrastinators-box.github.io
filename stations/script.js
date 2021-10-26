@@ -48,7 +48,11 @@ console.log("station make entered!");
   
   for (var i = 0; i < length; i++) {
        
-       console.log("loop entered， i: " + i + " " + primaryTheme[i].checked);
+       var checker = false;
+       if(i == 2) {
+            checker = true;
+       }
+       console.log("loop entered， i: " + i + " " + primaryTheme[i].checked + checker);
     
     if(stationName !== '' && noRepeats === true) {
       
