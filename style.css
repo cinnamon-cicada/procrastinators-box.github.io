@@ -68,6 +68,7 @@
   z-index: 1;
   padding: 1px;
   height: 69px;
+  pointer-events: none;
 }
 
 #logoSymbol {
