@@ -10,7 +10,7 @@
 }
 
 .titleText {
-  color: white;
+  color: dark grey;
   font-size: 13px;
   font-family: 'Patrick Hand', cursive;
   text-align: center;
@@ -25,7 +25,7 @@
   z-index: 1;
   text-align: center;
   background-color: #EBE4D5;
-  color: white;
+  color: dark grey;
   font-family: 'Patrick Hand', cursive;
   font-size: 16px;
   height: 70px;
@@ -131,7 +131,7 @@
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: white;
+  color: dark grey;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -153,13 +153,14 @@
 /*** CREATE NEW STATION ***/
 #submitStation {
   background-color: #EBE4D5;
-  width: 10%;
-  height: 2.5%;
-  color: white;
+  width: 15%;
+  height: 3.75%;
+  color: dark grey;
   font-size: 13px;
   font-family: 'Patrick Hand', cursive;
   text-align: center;
   margin-top: 2%;
+  border-radius: 10px;
 }
 
 #submitStation:however {
