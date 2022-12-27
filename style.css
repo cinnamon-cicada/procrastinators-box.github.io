@@ -37,8 +37,10 @@
 }
 
 #stations {
-  margin-left: 60%;
-  width: 20%;
+  margin-left: 62.5%;
+  width: 15%;
+  height: 7.5%;
+  margin-top: 1.25%;
 }
 
 .activeTab {
