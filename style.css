@@ -37,9 +37,29 @@
 }
 
 #stations {
-  margin-left: 62.5%;
-  width: 15%;
-  height: 7.5%;
+  margin-left: 59.28%;
+  width: 12.5%;
+  height: 50%;
+  margin-top: 1.25%;
+}
+
+#homepage {
+  margin-left: 3.57%;
+  width: 12.5%;
+  height: 50%;
+  margin-top: 1.25%;
+}
+
+#social {
+  margin-left: 75.36%;
+  width: 12.5%;
+  height: 50%;
+  margin-top: 1.25%;
+}
+
+#profileButton {
+  margin-left: 91.43%;
+  width: 5%;
   margin-top: 1.25%;
 }
 
@@ -51,7 +71,7 @@
   background: #EBE4D5;
   position: absolute;
   z-index: 1;
-  margin-left: 40%;
+  margin-left: 35.7%;
   width: 15%;
   line-height: 50%;
   margin-top: 0px;
@@ -63,7 +83,7 @@
   background: #EBE4D5 ;
   position: absolute;
   z-index: 1;
-  margin-left: 55%;
+  margin-left: 50.7%;
   width: 5%;
   margin-top: 0px;
   text-align: right;
