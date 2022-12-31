@@ -30,6 +30,9 @@
   font-size: 16px;
   height: 70px;
   border-radius: 20px;
+  position: absolute;
+  height: 10%;
+  margin-top: 1%
 }
 
 .subpageButtons:hover {
@@ -39,35 +42,27 @@
 #blog {
   margin-left: 19.64%;
   width: 12.5%;
-  height: 50%;
-  margin-top: 1.25%;
 }
 
 #stations {
   margin-left: 59.28%;
   width: 12.5%;
-  height: 50%;
-  margin-top: 1.25%;
 }
 
 #homepage {
   margin-left: 3.57%;
   width: 12.5%;
-  height: 50%;
-  margin-top: 1.25%;
 }
 
 #social {
   margin-left: 75.36%;
   width: 12.5%;
-  height: 50%;
-  margin-top: 1.25%;
 }
 
 #profileButton {
   margin-left: 91.43%;
   width: 5%;
-  margin-top: 1.25%;
+  margin-top: 1%;
 }
 
 .activeTab {
