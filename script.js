@@ -74,6 +74,51 @@ function startStopwatch() {
   stopwatchOn = true;
   setTimeout(add, 1000);
 }
+
+function loadAvatar() {
+  var images = [];
+  images.push('/Visuals/cow.png');
+  images.push('/Visuals/gecko.png');
+  images.push('/Visuals/owl.png');
+  images.push('/Visuals/pumpkin.png');
   
+  var quotes = [
+    "Did you know whales have the highest calcium content of any animal? Neither do I. I'm not entirely sure it's true.",
+    "What's your favorite type of tree?",
+    "FOCUS! YOU GOT THIS!",
+    "What are you working on?",
+    "Did you brush your teeth today?",
+    "My favorite apples are Cameo apples. Just in case you were wondering."
+    ];
+  
+  var cowQuotes = [
+    "MOOO!",
+    "Nothing beats dewy morning grass."
+    ];
+  
+  var owlQuotes = [
+    "Hoot!"
+    ];
+  
+  var pumpkinQuotes = [
+    "Happy Halloween!",
+    "My favorite season is October."
+    ];
+  
+  var one = Math.floor(Math.random()*4);
+  var two;
+  
+  if (one == 0) {
+    var combo = quotes.concat(cowQuotes);
+  }
+  else if (one == 2) {
+    var combo = quotes.concat(owlQuotes);
+  }
+  else if (one == 3) {
+    var combo = quotes.concat(pumpkinQuotes);
+  }
+  
+}
+
   //jump to place: document.getElementById("jump_to_this_location").scrollIntoView({behavior: 'smooth'});
   //add a SUBMIT button to know when to collect information
