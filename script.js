@@ -107,16 +107,23 @@ function loadAvatar() {
   
   var one = Math.floor(Math.random()*4);
   var two;
+  var combo;
   
   if (one == 0) {
-    var combo = quotes.concat(cowQuotes);
+    combo = quotes.concat(cowQuotes);
   }
   else if (one == 2) {
-    var combo = quotes.concat(owlQuotes);
+    combo = quotes.concat(owlQuotes);
   }
   else if (one == 3) {
-    var combo = quotes.concat(pumpkinQuotes);
+    combo = quotes.concat(pumpkinQuotes);
   }
+  
+  two = Math.floor(Math.random()*combo.length);
+  var quote = combo[two];
+  
+  //insert image after profile image in html code
+  
   
 }
 
