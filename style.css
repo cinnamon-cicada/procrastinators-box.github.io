@@ -129,7 +129,12 @@ html {
   background-color: white;
   border-radius: 5px;
   width: 15%;
-  margin-top: 
+  margin-bottom: -2.5%;
+  margin-right: 5%;
+}
+
+#avatarBox {
+  
 }
 
 /*** STATIONS DROPDOWN MENU ***/
