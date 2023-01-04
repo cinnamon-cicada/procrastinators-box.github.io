@@ -75,6 +75,8 @@ function startStopwatch() {
   setTimeout(add, 1000);
 }
 
+//here is avatar stuff!
+
 function loadAvatar() {
   var images = [];
   images.push('/Visuals/cow.png');
@@ -102,7 +104,8 @@ function loadAvatar() {
   
   var pumpkinQuotes = [
     "Happy Halloween!",
-    "My favorite season is October."
+    "I love October :)",
+    "🎃"
     ];
   
   var one = Math.floor(Math.random()*4);
@@ -123,7 +126,9 @@ function loadAvatar() {
   var quote = combo[two];
   
   //insert image after profile image in html code
-  
+  document.getElementById(takeTheQuiz).innerHTML += 
+    "<div class='avatar' img src='" + images[one] + "'> </div> \
+     <div class='avatarTextBox'>" + quote + "</div>";
   
 }
 
