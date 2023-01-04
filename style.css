@@ -118,9 +118,9 @@ html {
   background-color: #ff860d;
 }
 
-/*** AVATAR ***/
+/*** AVATAR (dynamic height + width, set bottom "margin", align right edge ***/
 #avatar {
-  margin-top: 20%;
+  margin-top: 70%;
   width: 15%;
   margin-left: 75%;
 }
@@ -129,6 +129,7 @@ html {
   background-color: white;
   border-radius: 5px;
   width: 15%;
+  margin-top: 
 }
 
 /*** STATIONS DROPDOWN MENU ***/
