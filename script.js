@@ -127,8 +127,8 @@ function loadAvatar() {
   
   //insert image after profile image in html code
   document.getElementById(takeTheQuiz).innerHTML += 
-    "<div class='avatar' img src='" + images[one] + "'> </div> \
-     <div class='avatarTextBox'>" + quote + "</div>";
+    "<div class='avatar' img src='" + images[one] + "'> \
+     <div class='avatarTextBox'>" + quote + "</div> </div>";
   
 }
 
