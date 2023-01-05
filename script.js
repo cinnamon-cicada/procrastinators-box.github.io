@@ -131,7 +131,7 @@ function loadAvatar() {
   var quote = combo[two];
   
   //insert image after profile image in html code
-  document.getElementById("takeTheQuiz").innerHTML += 
+  document.getElementById("avatarBox").innerHTML += 
     "<div class='avatar' img src='" + images[one] + "'> \
      <div class='avatarTextBox'>" + quote + "</div> </div>";
   
