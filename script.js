@@ -78,11 +78,16 @@ function startStopwatch() {
 //here is avatar stuff!
 
 function loadAvatar() {
+  
+  console.log("entered loadAvatar");
+  
   var images = [];
   images.push('/Visuals/cow.png');
   images.push('/Visuals/gecko.png');
   images.push('/Visuals/owl.png');
   images.push('/Visuals/pumpkin.png');
+  
+  console.log(images[1]);
   
   var quotes = [
     "Did you know whales have the highest calcium content of any animal? Neither do I. I'm not entirely sure it's true.",
