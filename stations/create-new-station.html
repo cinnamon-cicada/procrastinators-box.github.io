@@ -13,7 +13,7 @@
     <title>The Procrastinator's Box: Create a new station</title>
   </head>
   
-  <body>
+  <body onload="loadAvatar()">
     
      <div class="header" class="titleText">
        <div id="logoHeaderLeft" class="titleText">
@@ -22,14 +22,28 @@
        </div>
        <div id="logoHeaderRight">
          <a href="https://procrastinators-box.github.io">
-            <img src="Logo - symbol.png" alt="The toolbox logo" id="logoSymbol">
+            <img src="/Visuals/Logo - symbol.png" alt="The toolbox logo" id="logoSymbol">
          </a>
        </div>
        
-       <form method="get" action="/stations">
-        <button type="submit" class="subpageButtons" id="stations">Stations</button>
+       <form method="get">
+        <button formaction="/stations" type="submit" class="subpageButtons" id="stations">STATIONS</button>
+        <button formaction="/blog" type="submit" class="subpageButtons" id="blog">BLOG</button>
+        <button formaction="/social" type="submit" class="subpageButtons" id="social">SOCIAL</button>
+        <button formaction="/" type="submit" class="subpageButtons" id="homepage">HOME</button>
+
+        <a href="/profile">
+            <img src="/Visuals/profile.png" alt="Profile" id="profileButton">
+        </a>
+                     
+        <button formaction="/quiz" type="submit" class="titleText" id="takeTheQuiz">TAKE THE QUIZ!</button>
        </form>
-      </div>
+       
+     </div> 
+    
+    <div id="avatarBox" img src = ""> 
+      
+    </div>
        
        <div class="dropdown" class="titleText">
          <button class="dropdownButton" class="titleText">Select a station &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▽</button>
