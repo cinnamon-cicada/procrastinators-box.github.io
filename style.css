@@ -123,6 +123,7 @@ html {
   margin-top: 70%;
   width: 15%;
   margin-left: 75%;
+  position: relative;
 }
 
 #avatarTextBox {
@@ -131,6 +132,7 @@ html {
   width: 15%;
   margin-bottom: -2.5%;
   margin-right: 5%;
+  position: absolute;
 }
 
 #avatarBox {
