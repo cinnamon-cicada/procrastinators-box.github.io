@@ -126,6 +126,7 @@ function loadAvatar() {
   else if (one == 3) {
     combo = quotes.concat(pumpkinQuotes);
   }
+  else combo = quotes;
   
   two = Math.floor(Math.random()*combo.length);
   var quote = combo[two];
