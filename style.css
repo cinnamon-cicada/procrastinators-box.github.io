@@ -123,20 +123,19 @@ html {
   margin-top: 70%;
   width: 15%;
   margin-left: 75%;
-  position: relative;
+  position: absolute;
 }
 
 #avatarTextBox {
-  background-color: white;
+  background-color: #EBE4D5;
   border-radius: 5px;
   width: 15%;
-  margin-bottom: -2.5%;
-  margin-right: 5%;
+  margin-top: 60%;
+  margin-left: 70%;
   position: absolute;
 }
 
 #avatarBox {
-  
 }
 
 /*** STATIONS DROPDOWN MENU ***/
