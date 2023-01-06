@@ -34,8 +34,8 @@ function makeStation() {
 
 console.log("station make entered!");
   
-  var length = primaryTheme.length;
-    if(stations.length >= 2) {
+  //check if there is a repeat station name
+   var length = primaryTheme.length;
     for (var i = 0; i < stations.length; i++) {
       for (var k = 1; k < stations.length; k++) {
         if (stations[i]===stations[k]) {
@@ -44,15 +44,8 @@ console.log("station make entered!");
         }
       }
     }
-  }
   
   for (var i = 0; i < length; i++) {
-       
-       var checker = false;
-       if(i == 2) {
-            checker = true;
-       }
-       console.log("loop entered， i: " + i + " " + primaryTheme[i].checked + checker);
     
     if(stationName !== '' && noRepeats === true) {
       
@@ -64,7 +57,7 @@ console.log("station make entered!");
 
       document.body.appendChild(newDiv);
       document.getElementById("dropdownStuff").innerHTML += "<a href=#\'" + stationName + "\'>" + stationName + "</a>"; 
-
+//CONT. here
       if (primaryTheme[i].checked) {
         //forward pomodoro
            console.log('yes it is checked');
