@@ -56,10 +56,6 @@
          <input type="text" id="addTitle" name="addTitle"> <br>
 
          <p class="bodyText">Choose a primary theme:</p>
-         <input type="radio" id="pomodoroForward" name="primary_theme" onclick="getTime('Stop', 1)">
-         <label for="pomodoroForward" class="bodyText">Pomodoro: Stopwatch </label> <br>
-         <input type="radio" id="pomodoroBackward" name="primary_theme" onclick="getTime('Start', 1)">
-         <label for="pomodoroBackward" class="bodyText">Pomodoro: Countdown</label> <br>
          <!-- placeholder for TEXT, VOICE CHAT -->
          <input type="radio" id="list" name="primary_theme">
          <label for="list" class="bodyText">List</label> <br> 
@@ -67,6 +63,17 @@
          <label for="fullscreenImg" class="bodyText">Fullscreen Image</label> <br>
          <input type="radio" id="textDocs" name="primary_theme">
          <label for="textDocs" class="bodyText" id="inputA">Text Document</label> <br>
+         
+         <p class="bodyText">Would you like a timer?:</p>
+         <input type="radio" id="pomodoroForward" name="primary_theme">
+         <label for="pomodoroForward" class="bodyText">Stopwatch </label> <br>
+         <input type="radio" id="pomodoroBackward" name="primary_theme">
+         <label for="pomodoroBackward" class="bodyText">Countdown</label> <br>
+         
+         <label class="bodyText" for="inputHours">Hours: </label> 
+         <input type="text" id="inputHours" name="inputTime"> <br> 
+         <label class="bodyText" for="inputMinutes">Minutes: </label> 
+         <input type="text" id="inputMinutes" name="inputTime"> <br>
        
          <p class="bodyText">Choose add-ons:</p>
          <input type="checkbox" id="fullscreenImg2" name="addOn">
