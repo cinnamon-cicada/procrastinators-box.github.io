@@ -122,6 +122,14 @@ html {
   background-color: #ff860d;
 }
 
+/*** FRONT PAGE TEXT ***/
+.bigText {
+  font-family: 'Comfortaa', cursive;
+  font-size: 30px;
+  color: dark grey;
+}
+
+
 /*** AVATAR (dynamic height + width, set bottom "margin", align right edge ***/
 #avatar {
   margin-top: 27.5%;
