@@ -35,47 +35,46 @@ function makeStation() {
 console.log("station make entered!");
   
   //check if there is a repeat station name
-   var length = primaryTheme.length;
+   var pLength = primaryTheme.length;
     for (var i = 0; i < stations.length; i++) {
       for (var k = 1; k < stations.length; k++) {
         if (stations[i]===stations[k]) {
-          console.log("error!!"); //WIP: make it more fancy later!!
+          console.log("error!! repeated name"); //WIP: make it more fancy later!!
           noRepeats = false;
         }
       }
     }
   
-  for (var i = 0; i < length; i++) {
+     //CONT THIS LOOP
+  for (var i = 0; i < pLength; i++) {
     
-    if(stationName !== '' && noRepeats === true) {
-      
-      var newDiv = document.createElement(stationName);
-      newDiv.id = stationName;
-      newDiv.className = 'stationsBox';
-      stations.push(newDiv);
-      
+     if(stationName !== '' && noRepeats === true) {
 
-      document.body.appendChild(newDiv);
-      document.getElementById("dropdownStuff").innerHTML += "<a href=#\'" + stationName + "\'>" + stationName + "</a>"; 
-//CONT. here
-      if (primaryTheme[i].checked) {
-        //forward pomodoro
-           console.log('yes it is checked');
-        if (i == 0) {
+          //create a blank station box
+          var newDiv = document.createElement(stationName);
+          newDiv.id = stationName;
+          newDiv.className = 'stationsBox';
+          stations.push(newDiv);
+          document.body.appendChild(newDiv);
+          document.getElementById("dropdownStuff").innerHTML += "<a href=#\'" + stationName + "\'>" + stationName + "</a>"; 
           
-          //STOPWATCH
-          var time = document.getElementById('timerTime').value;
-          document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
-            <div id='timeDisplay'>00:00:00</div> \
-                <button onclick='startStopwatch()' class='start'>Start</button> \
-                <button onclick='stopTimer()' class='stop'>Stop</button> \
-                <button onclick='resetTimer()' class='reset'>Reset</button> \
-           </div>"
-            
-        }
+     if (primaryTheme[i].checked) {
+          
+          //forward pomodoro
+          if (i == 3) {
+
+               //STOPWATCH
+               var time = document.getElementById('timerTime').value;
+               document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
+               <div id='timeDisplay'>00:00:00</div> \
+               <button onclick='startStopwatch()' class='start'>Start</button> \
+               <button onclick='stopTimer()' class='stop'>Stop</button> \
+               <button onclick='resetTimer()' class='reset'>Reset</button> \
+               </div>"
+
+     }
         
-        else if (i == 1) {
-          console.log("so you chose to count down?");
+     else if (i == 4) {
           var min = document.getElementById('inputMinutes').value || "00";
           var h = document.getElementById('inputHours').value || "00";
           if(min == 0) {
@@ -85,23 +84,25 @@ console.log("station make entered!");
                h = "00";
           }
           document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
-            <div id='timeDisplay'>" + h + ":" + min + ":00" + "</div> \
-                <button onclick='startCountdown()' class='start'>Start</button> \
-                <button onclick='stopTimer()' class='stop'>Stop</button> \
-                <button onclick='resetTimer()' class='reset'>Reset</button> \
-           </div>"
-        }
+          <div id='timeDisplay'>" + h + ":" + min + ":00" + "</div> \
+          <button onclick='startCountdown()' class='start'>Start</button> \
+          <button onclick='stopTimer()' class='stop'>Stop</button> \
+          <button onclick='resetTimer()' class='reset'>Reset</button> \
+          </div>"
+     }
         
-        else if (i == 2) {
+     else if (i == 0) {
+          
+          //now it's a list!
           document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
-            <textarea rows='20' cols='80' id='list'> </textarea> \
-           </div>"
-        }
+          <textarea rows='20' cols='80' id='list'> </textarea> \
+          </div>"
+     }
 
-        break;
-      }
-    }
-  }
+          break;
+               }
+          }
+     }
 }
 
 function addTimer() {
