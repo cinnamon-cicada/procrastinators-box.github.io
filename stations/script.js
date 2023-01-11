@@ -5,6 +5,7 @@ document.getElementsByTagName('head')[0].appendChild(script);
 
 var primaryTheme = document.getElementsByName('primary_theme');
 var stationName = document.getElementById('addTitle').value;
+var timeTheme = document.getElementsByName('time_theme');
 
 var seconds = 0, minutes = 0, hours = 0, timerOn = false;
 var stations = [];
@@ -35,7 +36,8 @@ function makeStation() {
 console.log("station make entered!");
   
   //check if there is a repeat station name
-   var pLength = primaryTheme.length;
+     var pLength = primaryTheme.length;
+     var tLength = timeTheme.length;
     for (var i = 0; i < stations.length; i++) {
       for (var k = 1; k < stations.length; k++) {
         if (stations[i]===stations[k]) {
@@ -44,10 +46,7 @@ console.log("station make entered!");
         }
       }
     }
-  
-     //CONT THIS LOOP
-  for (var i = 0; i < pLength; i++) {
-    
+     
      if(stationName !== '' && noRepeats === true) {
 
           //create a blank station box
@@ -57,13 +56,53 @@ console.log("station make entered!");
           stations.push(newDiv);
           document.body.appendChild(newDiv);
           document.getElementById("dropdownStuff").innerHTML += "<a href=#\'" + stationName + "\'>" + stationName + "</a>"; 
+     }
+     
+     var wantTimer = false;
+     
+     //CONT THIS LOOP
+     
+     //loop through main theme
+  for (var i = 0; i < pLength; i++) {
           
      if (primaryTheme[i].checked) {
           
           //forward pomodoro
-          if (i == 3) {
+          if (i == 0) {
 
-               //STOPWATCH
+               //List
+               document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
+               <textarea rows='20' cols='80' id='list'> </textarea> \
+               </div>"
+
+          }
+        
+          else if (i == 1) {
+               //add a fullscreen image
+          }
+        
+          else if (i == 3) {
+               //text box
+          }
+          
+          else if (i == 4) {
+               wantTimer = true;
+          }
+
+          break;
+               
+          }
+     }
+     
+  //loop through timer selections
+  for (var i = 0; i < tLength; i++) {
+          
+     if (timeTheme[i].checked) {
+          
+          //forward pomodoro
+          if (i == 0) {
+
+               //Stopwatch
                var time = document.getElementById('timerTime').value;
                document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
                <div id='timeDisplay'>00:00:00</div> \
@@ -72,37 +111,32 @@ console.log("station make entered!");
                <button onclick='resetTimer()' class='reset'>Reset</button> \
                </div>"
 
-     }
-        
-     else if (i == 4) {
-          var min = document.getElementById('inputMinutes').value || "00";
-          var h = document.getElementById('inputHours').value || "00";
-          if(min == 0) {
-               min = "00";
           }
-          if(h == 0) {
-               h = "00";
-          }
-          document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
-          <div id='timeDisplay'>" + h + ":" + min + ":00" + "</div> \
-          <button onclick='startCountdown()' class='start'>Start</button> \
-          <button onclick='stopTimer()' class='stop'>Stop</button> \
-          <button onclick='resetTimer()' class='reset'>Reset</button> \
-          </div>"
-     }
-        
-     else if (i == 0) {
-          
-          //now it's a list!
-          document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
-          <textarea rows='20' cols='80' id='list'> </textarea> \
-          </div>"
-     }
 
-          break;
+          else if (i == 1) {
+               
+               //Countdown
+               var min = document.getElementById('inputMinutes').value || "00";
+               var h = document.getElementById('inputHours').value || "00";
+               if(min == 0) {
+                    min = "00";
                }
+               if(h == 0) {
+                    h = "00";
+               }
+               document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
+               <div id='timeDisplay'>" + h + ":" + min + ":00" + "</div> \
+               <button onclick='startCountdown()' class='start'>Start</button> \
+               <button onclick='stopTimer()' class='stop'>Stop</button> \
+               <button onclick='resetTimer()' class='reset'>Reset</button> \
+               </div>"
+          }
+          
+          break;
+               
           }
      }
+}
 }
 
 function addTimer() {
