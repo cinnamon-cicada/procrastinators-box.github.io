@@ -129,6 +129,7 @@ html {
   color: dark grey;
   margin-top: 10%;
   margin-left: 3.57%;
+  position: absolute;
 }
 
 .subBigText {
