@@ -58,7 +58,7 @@ console.log("station make entered!");
           document.getElementById("dropdownStuff").innerHTML += "<a href=#\'" + stationName + "\'>" + stationName + "</a>"; 
      }
      
-     var wantTimer = false;
+     var mainTimer = false;
      
      //CONT THIS LOOP
      
@@ -86,7 +86,7 @@ console.log("station make entered!");
           }
           
           else if (i == 4) {
-               wantTimer = true;
+               mainTimer = true;
           }
 
           break;
@@ -95,44 +95,51 @@ console.log("station make entered!");
      }
      
   //loop through timer selections
-  for (var i = 0; i < tLength; i++) {
-          
-     if (timeTheme[i].checked && wantTimer) {
-          
-          //forward pomodoro
-          if (i == 0) {
+     for (var i = 0; i < tLength; i++) {
+       
+          var toInsert = ''; 
 
-               //Stopwatch
-               var time = document.getElementById('timerTime').value;
-               document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
-               <div id='timeDisplay'>00:00:00</div> \
-               <button onclick='startStopwatch()' class='start'>Start</button> \
-               <button onclick='stopTimer()' class='stop'>Stop</button> \
-               <button onclick='resetTimer()' class='reset'>Reset</button> \
-               </div>"
+          if (timeTheme[i].checked) {
 
-          }
-
-          else if (i == 1) {
-               
-               //Countdown
-               var min = document.getElementById('inputMinutes').value || "00";
-               var h = document.getElementById('inputHours').value || "00";
-               if(min == 0) {
-                    min = "00";
+               if(mainTimer) {
+                    toInsert = "class='bigTimeBox'";
                }
-               if(h == 0) {
-                    h = "00";
+               else toInsert = "class='smallTimeBox'";
+
+               //forward pomodoro
+               if (i == 0) {
+
+                    //Stopwatch
+                    var time = document.getElementById('timerTime').value;
+                    document.getElementById(stationName).innerHTML += "<div " + toInsert + "> \
+                    <div id='timeDisplay'>00:00:00</div> \
+                    <button onclick='startStopwatch()' class='start'>Start</button> \
+                    <button onclick='stopTimer()' class='stop'>Stop</button> \
+                    <button onclick='resetTimer()' class='reset'>Reset</button> \
+                    </div>"
+
                }
-               document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
-               <div id='timeDisplay'>" + h + ":" + min + ":00" + "</div> \
-               <button onclick='startCountdown()' class='start'>Start</button> \
-               <button onclick='stopTimer()' class='stop'>Stop</button> \
-               <button onclick='resetTimer()' class='reset'>Reset</button> \
-               </div>"
-          }
-          
-          break;
+
+               else if (i == 1) {
+
+                    //Countdown
+                    var min = document.getElementById('inputMinutes').value || "00";
+                    var h = document.getElementById('inputHours').value || "00";
+                    if(min == 0) {
+                         min = "00";
+                    }
+                    if(h == 0) {
+                         h = "00";
+                    }
+                    document.getElementById(stationName).innerHTML += "<div " + toInsert + "> \
+                    <div id='timeDisplay'>" + h + ":" + min + ":00" + "</div> \
+                    <button onclick='startCountdown()' class='start'>Start</button> \
+                    <button onclick='stopTimer()' class='stop'>Stop</button> \
+                    <button onclick='resetTimer()' class='reset'>Reset</button> \
+                    </div>"
+               }
+
+               break;
                
           }
      }
