@@ -97,7 +97,7 @@ console.log("station make entered!");
   //loop through timer selections
   for (var i = 0; i < tLength; i++) {
           
-     if (timeTheme[i].checked) {
+     if (timeTheme[i].checked && wantTimer) {
           
           //forward pomodoro
           if (i == 0) {
@@ -136,7 +136,6 @@ console.log("station make entered!");
                
           }
      }
-}
 }
 
 function addTimer() {
