@@ -203,6 +203,68 @@ function startCountdown() {
   timerOn = true;
   setTimeout(subtractTimer, 995);
 }
+
+//make some more avatars
+function loadAvatar() {
+  
+  console.log("entered loadAvatar");
+  
+  var images = [];
+  images.push('/Visuals/cow.png');
+  images.push('/Visuals/gecko.png');
+  images.push('/Visuals/owl.png');
+  images.push('/Visuals/pumpkin.png');
+  
+  console.log(images[1]);
+  
+  var quotes = [
+    "Did you know whales have the highest calcium content of any animal? Neither do I. I'm not entirely sure it's true.",
+    "What's your favorite type of tree?",
+    "FOCUS! YOU GOT THIS!",
+    "What are you working on?",
+    "Did you brush your teeth today?",
+    "My favorite apples are Cameo apples. Just in case you were wondering."
+    ];
+  
+  var cowQuotes = [
+    "MOOO!",
+    "Nothing beats dewy morning grass."
+    ];
+  
+  var owlQuotes = [
+    "Hoot!"
+    ];
+  
+  var pumpkinQuotes = [
+    "Happy Halloween!",
+    "I love October :)",
+    "🎃"
+    ];
+  
+  var one = Math.floor(Math.random()*4);
+  var two;
+  var combo;
+  
+  if (one == 0) {
+    combo = quotes.concat(cowQuotes);
+  }
+  else if (one == 2) {
+    combo = quotes.concat(owlQuotes);
+  }
+  else if (one == 3) {
+    combo = quotes.concat(pumpkinQuotes);
+  }
+  else combo = quotes;
+  
+  two = Math.floor(Math.random()*combo.length);
+  var quote = combo[two];
+  
+  //insert image after profile image in html code
+  document.getElementById("avatarBox").innerHTML += 
+    "<img id='avatar' src='" + images[one] + "'> </img> \
+     <div id='avatarTextBox' class='paragraphText'>" + quote + "</div>";
+  
+}
   
   //jump to place: document.getElementById("jump_to_this_location").scrollIntoView({behavior: 'smooth'});
   //add a SUBMIT button to know when to collect information
