@@ -63,34 +63,33 @@ console.log("station make entered!");
      //CONT THIS LOOP
      
      //loop through main theme
-  for (var i = 0; i < pLength; i++) {
-          
-     if (primaryTheme[i].checked) {
-          
-          //forward pomodoro
-          if (i == 0) {
+       for (var i = 0; i < pLength; i++) {
 
-               //List
-               document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
-               <textarea rows='20' cols='80' id='list'> </textarea> \
-               </div>"
+          if (primaryTheme[i].checked) {
 
-          }
-        
-          else if (i == 1) {
-               //add a fullscreen image
-          }
-        
-          else if (i == 3) {
-               //text box
-          }
-          
-          else if (i == 4) {
-               mainTimer = true;
-          }
+               //forward pomodoro
+               if (i == 0) {
 
-          break;
-               
+                    //List
+                    document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
+                    <textarea rows='20' cols='80' id='list'> </textarea> \
+                    </div>"
+
+               }
+
+               else if (i == 1) {
+                    //add a fullscreen image
+               }
+
+               else if (i == 3) {
+                    //text box
+               }
+
+               else if (i == 4) {
+                    console.log("1");
+                    mainTimer = true;
+               } 
+               break;
           }
      }
      
@@ -98,6 +97,8 @@ console.log("station make entered!");
      for (var i = 0; i < tLength; i++) {
        
           var toInsert = ''; 
+          
+          console.log("2");
 
           if (timeTheme[i].checked) {
 
@@ -108,9 +109,11 @@ console.log("station make entered!");
 
                //forward pomodoro
                if (i == 0) {
+                    
+                    console.log("3");
 
                     //Stopwatch
-                    var time = document.getElementById('timerTime').value;
+                    //var time = document.getElementById('timerTime').value;
                     document.getElementById(stationName).innerHTML += "<div " + toInsert + "> \
                     <div id='timeDisplay'>00:00:00</div> \
                     <button onclick='startStopwatch()' class='start'>Start</button> \
