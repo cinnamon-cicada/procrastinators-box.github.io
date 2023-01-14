@@ -195,13 +195,17 @@ function resetTimer() {
 }
 
 function startStopwatch() {
-  timerOn = true;
-  setTimeout(addTimer, 995);
+     if(timerOn == false) {
+          timerOn = true;
+          setTimeout(addTimer, 995);
+     }
 }
 
 function startCountdown() {
-  timerOn = true;
-  setTimeout(subtractTimer, 995);
+     if(timerOn == false) {
+          timerOn = true;
+          setTimeout(subtractTimer, 995);
+     }
 }
 
 //make some more avatars
