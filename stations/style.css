@@ -124,9 +124,9 @@ html {
 
 /*** AVATAR (dynamic height + width, set bottom "margin", align right edge ***/
 #avatar {
-  margin-top: 70%;
+  margin-top: 27.5%;
   width: 15%;
-  margin-left: 75%;
+  margin-left: 80%;
   position: absolute;
 }
 
@@ -134,12 +134,16 @@ html {
   background-color: #EBE4D5;
   border-radius: 5px;
   width: 15%;
-  margin-top: 60%;
+  margin-top: 22.5%;
   margin-left: 70%;
+  padding: 15px;
   position: absolute;
 }
 
 #avatarBox {
+  width: 100%;
+  height: 80%;
+  position: relative;
 }
 
 /*** STATIONS DROPDOWN MENU ***/
