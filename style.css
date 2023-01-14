@@ -123,12 +123,15 @@ html {
 }
 
 /*** FRONT PAGE TEXT ***/
-.bigText {
+.bigText, .subBigTest {
   font-family: 'Comfortaa', cursive;
-  font-size: 60px;
   color: dark grey;
   margin-left: 3.57%;
   position: absolute;
+}
+
+.bigText {
+  font-size: 60px;
 }
 
 .subBigText {
