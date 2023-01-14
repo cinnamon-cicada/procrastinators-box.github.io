@@ -234,6 +234,10 @@ html {
   padding: 0px 2.5%;
 }
 
+input[name="inputTime"] {
+  padding-left: 5px;
+}
+
 /*** TAKE THE QUIZ ***/
 #takeTheQuiz {
   width: 20%;
