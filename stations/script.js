@@ -101,6 +101,13 @@ console.log("station make entered!");
           console.log("2");
 
           if (timeTheme[i].checked) {
+               
+               document.getElementById(stationName).innerHTML += "<label class='bodyText' for='inputHours'>Hours: </label> \
+                    <input type='text' id='inputHours' name='inputTime'> <br> \
+                    <label class='bodyText' for='inputMinutes'>Minutes: </label> \
+                    <input type='text' id='inputMinutes' name='inputTime'> <br>"
+
+               }
 
                if(mainTimer) {
                     toInsert = "class='bigTimeBox'";
