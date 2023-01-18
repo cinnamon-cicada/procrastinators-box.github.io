@@ -1,3 +1,5 @@
+/*** ALERT: don't delete stationForms ***/
+
 html {
   background: url(Visuals/background.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -230,9 +232,11 @@ html {
   background-color: #E6D8BE;
 }
 
-.indentContent {
+#stationForms {
   box-sizing: border-box;
   padding: 0px 2.5%;
+  column-count: 3;
+  column-gap: 10%;
 }
 
 input[name="inputTime"] {
