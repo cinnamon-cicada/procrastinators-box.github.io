@@ -272,8 +272,8 @@ input[name="inputTime"] {
 
 /*** GENERAL STATIONS FORMAT ***/
 .stationsBox {
-  width: 100%;
-  height: 100%;
+  height: 100vh; /* For 100% screen height */
+  width:  100vw; 
   background-color: #D9D9D6;
 }
 
