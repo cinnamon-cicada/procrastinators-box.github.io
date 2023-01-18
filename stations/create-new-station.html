@@ -50,27 +50,32 @@
            </div>
        </div>
         
-       <form class="indentContent">
+       <form id="stationForms">
          <br>
-         <label for="addTitle" class="bodyText">Title (necessary): &nbsp;&nbsp;&nbsp;&nbsp;</label>
-         <input type="text" id="addTitle" name="addTitle"> <br>
-
-         <p class="bodyText">Choose a primary theme:</p>
-         <!-- placeholder for TEXT, VOICE CHAT -->
-         <input type="radio" id="list" name="primary_theme">
-         <label for="list" class="bodyText">List</label> <br> 
-         <input type="radio" id="fullscreenImg" name="primary_theme">
-         <label for="fullscreenImg" class="bodyText">Fullscreen Image</label> <br>
-         <input type="radio" id="textDocs" name="primary_theme">
-         <label for="textDocs" class="bodyText" id="inputA">Text Document</label> <br>
-         <input type="radio" id="timer" name="primary_theme">
-         <label for="timer" class="bodyText">Timer</label> <br>
          
-         <p class="bodyText">Would you like a timer?:</p>
-         <input type="radio" id="pomodoroForward" name="time_theme">
-         <label for="pomodoroForward" class="bodyText">Stopwatch </label> <br>
-         <input type="radio" id="pomodoroBackward" name="time_theme">
-         <label for="pomodoroBackward" class="bodyText">Countdown</label> <br>
+         <div>
+           <label for="addTitle" class="bodyText">Title (necessary): &nbsp;&nbsp;&nbsp;&nbsp;</label>
+           <input type="text" id="addTitle" name="addTitle"> <br>
+
+           <p class="bodyText">Choose a primary theme:</p>
+           <!-- placeholder for TEXT, VOICE CHAT -->
+           <input type="radio" id="list" name="primary_theme">
+           <label for="list" class="bodyText">List</label> <br> 
+           <input type="radio" id="fullscreenImg" name="primary_theme">
+           <label for="fullscreenImg" class="bodyText">Fullscreen Image</label> <br>
+           <input type="radio" id="textDocs" name="primary_theme">
+           <label for="textDocs" class="bodyText" id="inputA">Text Document</label> <br>
+           <input type="radio" id="timer" name="primary_theme">
+           <label for="timer" class="bodyText">Timer</label> <br>
+         </div>
+         
+         <div>
+           <p class="bodyText">Would you like a timer?:</p>
+           <input type="radio" id="pomodoroForward" name="time_theme">
+           <label for="pomodoroForward" class="bodyText">Stopwatch </label> <br>
+           <input type="radio" id="pomodoroBackward" name="time_theme">
+           <label for="pomodoroBackward" class="bodyText">Countdown</label> <br>
+         </div>
          
          <!--
          <input type="checkbox" id="pomodoroForward2" name="addOn">
@@ -80,17 +85,18 @@
          <input type="checkbox" id="list2" name="addOn">
          <label for="list" class="bodyText" type="checkbox" id="inputB">List</label> <br>
 -->
-         
-         <p class="bodyText">Customize your theme:</p>
-         <label for="addNoise" class="bodyText">Music/ambient noise (insert a YouTube link): &nbsp;&nbsp;&nbsp;&nbsp;</label>
-         <input type="text" id="addNoise" name="addTheme"> <br>
-         <label for="addBkgColor" class="bodyText">Add background color (hex/RGB): &nbsp;&nbsp;&nbsp;&nbsp;</label>
-         <input type="text" id="addBkgColor" name="addTheme"> <br>
-         <!-- WIP: change font? -->
-         <label for="textColor" class="bodyText">Change text color (hex/RGB): &nbsp;&nbsp;&nbsp;&nbsp;</label>
-         <input type="text" id="textColor" name="addTheme" id="inputC"> <br>
-         <label for="fullscreenImg" class="bodyText"> Fullscreen Image</label> 
-         <input type="checkbox" id="fullscreenImg2" name="addOn"><br>
+         <div>
+           <p class="bodyText">Customize your theme:</p>
+           <label for="addNoise" class="bodyText">Music/ambient noise (insert a YouTube link): &nbsp;&nbsp;&nbsp;&nbsp;</label>
+           <input type="text" id="addNoise" name="addTheme"> <br>
+           <label for="addBkgColor" class="bodyText">Add background color (hex/RGB): &nbsp;&nbsp;&nbsp;&nbsp;</label>
+           <input type="text" id="addBkgColor" name="addTheme"> <br>
+           <!-- WIP: change font? -->
+           <label for="textColor" class="bodyText">Change text color (hex/RGB): &nbsp;&nbsp;&nbsp;&nbsp;</label>
+           <input type="text" id="textColor" name="addTheme" id="inputC"> <br>
+           <label for="fullscreenImg" class="bodyText"> Fullscreen Image</label> 
+           <input type="checkbox" id="fullscreenImg2" name="addOn"><br>
+         </div>
          
        </form> 
     
