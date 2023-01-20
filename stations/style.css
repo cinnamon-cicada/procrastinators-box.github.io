@@ -243,6 +243,10 @@ input[name="inputTime"] {
   padding-left: 5px;
 }
 
+#addTitleBox {
+  
+}
+
 /*** TAKE THE QUIZ ***/
 #takeTheQuiz {
   width: 20%;
