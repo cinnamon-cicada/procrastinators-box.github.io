@@ -24,17 +24,28 @@
     --> 
 
 <!--*** HEADER STRIP ***: ABOUT BLOG STATIONS QUIZ, + "Take the quiz!" -->
+
      <div class="header" class="titleText">
        <div id="logoHeaderLeft" class="titleText">
          <h2 class="headerText" class="titleText"> THE </h2>
          <h2 class="headerText" class="titleText"> PROCRASTINATOR'S BOX </h2>
        </div>
        <div id="logoHeaderRight">
-         <img src="Visuals/Logo - symbol.png" alt="The toolbox logo" id="logoSymbol">
+         <a href="https://procrastinators-box.github.io">
+            <img src="/Visuals/Logo - symbol.png" alt="The toolbox logo" id="logoSymbol">
+         </a>
        </div>
-       <form method="get" action="/stations">
-        <button type="submit" class="subpageButtons" id="stations" class="activeTab">Stations</button>
+       
+       <form method="get">
+        <button formaction="/stations" type="submit" class="subpageButtons" id="stations">STATIONS</button>
+        <button formaction="/blog" type="submit" class="subpageButtons" id="blog">BLOG</button>
+        <button formaction="/social" type="submit" class="subpageButtons" id="social">SOCIAL</button>
+        <button formaction="/" type="submit" class="subpageButtons" id="homepage">HOME</button>
+        <a href="/profile">
+            <img src="/Visuals/profile.png" alt="Profile" id="profileButton">
+        </a>
        </form>
+       
      </div> 
     
 <!--*** DROPDOWN ***-->
