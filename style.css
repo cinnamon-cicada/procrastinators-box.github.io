@@ -356,3 +356,7 @@ html {
   word-wrap: break-word;
   padding: 10px;
 }
+
+#introBoxText {
+  margin-top: 40%;
+}
