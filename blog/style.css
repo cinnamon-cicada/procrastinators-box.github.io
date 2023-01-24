@@ -341,3 +341,21 @@ html {
   font: normal 14px verdana;
   padding: 2px 10px;   
 }
+
+//BLOG
+#introBox {
+  background-color: #7091AD;
+  margin-top: 12.5%;
+  margin-left: 75%;
+  width: 10%;
+  height: 35%;
+  color: dark grey;
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
+  word-wrap: break-word;
+  padding: 10px;
+}
+
+#introBoxText {
+  margin-top: 40%;
+}
