@@ -29,7 +29,7 @@ html {
 }
 
 .paragraphText {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .subpageButtons {
@@ -202,7 +202,7 @@ html {
   z-index: 1;
   width: 100%;
   overflow: auto;
-  font-size: 13px;
+  font-size: 16px;
   font-family: 'Patrick Hand', cursive;
   text-align: center;
   border-radius: 10px;
@@ -215,7 +215,7 @@ html {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  font-size: 13px;
+  font-size: 16px;
   font-family: 'Patrick Hand', cursive;
   text-align: center;
 }
@@ -350,4 +350,7 @@ html {
   margin-left: 75%;
   width: 15%;
   height: 40%;
+  color: dark grey;
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
 }
