@@ -329,7 +329,7 @@ html {
   margin-left: 11.25%;
 }
 
-//LIST
+/*** LIST ***/
 #list {
   background-color: #EBE4D5;
   width: 30%;
@@ -342,7 +342,7 @@ html {
   padding: 2px 10px;   
 }
 
-//BLOG
+/*** BLOG ***/
 #introBox {
   background-color: #7091AD;
   margin-top: 12.5%;
