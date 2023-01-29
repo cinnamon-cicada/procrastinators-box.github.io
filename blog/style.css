@@ -343,6 +343,7 @@ html {
 }
 
 /*** BLOG ***/
+
 #introBox {
   background-color: #7091AD;
   margin-top: 12.5%;
@@ -358,4 +359,13 @@ html {
 
 #introBoxText {
   margin-top: 40%;
+}
+
+#introPhoto {
+  width: 75%;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  aspect-ratio : 1 / 1;
 }
