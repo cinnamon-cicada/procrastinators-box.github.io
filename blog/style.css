@@ -347,14 +347,14 @@ html {
 #introBox {
   background-color: #7091AD;
   margin-top: 12.5%;
-  margin-left: 75%;
-  width: 10%;
-  height: 35%;
+  margin-left: 80%;
+  width: 12.5%;
+  height: 400px;
   color: dark grey;
   font-family: 'Comfortaa', cursive;
   font-size: 16px;
   word-wrap: break-word;
-  padding: 10px;
+  padding: 20px;
 }
 
 #introBoxText {
