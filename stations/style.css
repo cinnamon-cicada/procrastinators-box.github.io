@@ -160,7 +160,7 @@ html {
   height: 100%;
   background-color: #EBE4D5;
   color: dark grey;
-  font-size: 13px;
+  font-size: 16px;
   font-family: 'Patrick Hand', cursive;
   text-align: center;
   border-radius: 10px;
@@ -186,7 +186,7 @@ html {
   z-index: 1;
   width: 100%;
   overflow: auto;
-  font-size: 13px;
+  font-size: 16px;
   font-family: 'Patrick Hand', cursive;
   text-align: center;
   border-radius: 10px;
@@ -199,7 +199,7 @@ html {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  font-size: 13px;
+  font-size: 16px;
   font-family: 'Patrick Hand', cursive;
   text-align: center;
 }
@@ -220,7 +220,7 @@ html {
   width: 15%;
   height: 3.75%;
   color: dark grey;
-  font-size: 13px;
+  font-size: 16px;
   font-family: 'Patrick Hand', cursive;
   text-align: center;
   margin-top: 2%;
