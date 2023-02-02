@@ -24,12 +24,7 @@ html {
   text-align: center;
 }
 
-.headerText {
-  z-index: 3;
-}
-
-.paragraphText {
-  font-size: 16px;
+.phTwo {
 }
 
 .subpageButtons {
@@ -123,18 +118,18 @@ html {
 }
 
 /*** FRONT PAGE TEXT ***/
-.bigText, .subBigTest {
+.comfortaaOne, .comfortaaTwo {
   font-family: 'Comfortaa', cursive;
   color: dark grey;
   margin-left: 3.57%;
   position: absolute;
 }
 
-.bigText {
+.comfortaaOne {
   font-size: 60px;
 }
 
-.subBigText {
+.comfortaaTwo {
   font-size: 30px;
   margin-top: 15%;
 }
@@ -183,10 +178,10 @@ html {
 }
 
 /*** GENERAL BODY ***/
-.bodyText {
+.paragraph {
   color: black;
   font-size: 16px;
-  font-family: 'Patrick Hand', cursive;
+  font-family: 'Comfortaa', cursive;
   text-align: left; 
   line-height: 2;
 }
