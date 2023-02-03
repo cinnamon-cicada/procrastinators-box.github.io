@@ -19,22 +19,22 @@ html {
 
 .titleText  {
   color: dark grey;
-  font-size: 13px;
+  font-size: 16px;
   font-family: 'Patrick Hand', cursive;
   text-align: center;
 }
 
 .phTwo {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 16px;
+  text-align: center;
 }
 
 .subpageButtons {
   margin-top: 0px;
   z-index: 1;
-  text-align: center;
   background-color: #EBE4D5;
   color: dark grey;
-  font-family: 'Patrick Hand', cursive;
-  font-size: 16px;
   height: 70px;
   border-radius: 20px;
   position: absolute;
