@@ -28,13 +28,13 @@ html {
   font-family: 'Patrick Hand', cursive;
   font-size: 16px;
   text-align: center;
+  color: dark grey;
 }
 
 .subpageButtons {
   margin-top: 0px;
   z-index: 1;
   background-color: #EBE4D5;
-  color: dark grey;
   height: 70px;
   border-radius: 20px;
   position: absolute;
