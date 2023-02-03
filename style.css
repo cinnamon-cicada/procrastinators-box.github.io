@@ -134,6 +134,11 @@ html {
   margin-top: 15%;
 }
 
+.comfortaaThree {
+  font-size: 16px;
+  font-family: 'Comfortaa', cursive;
+  color: dark grey;
+}
 
 /*** AVATAR (dynamic height + width, set bottom "margin", align right edge ***/
 #avatar {
