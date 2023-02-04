@@ -64,28 +64,21 @@ console.log("station make entered!");
      
      //loop through main theme
        for (var i = 0; i < pLength; i++) {
-
           if (primaryTheme[i].checked) {
-
                //forward pomodoro
                if (i == 0) {
-
                     //List
-                    document.getElementById(stationName).innerHTML += "<div class='timerBox'> \
+                    document.getElementById(stationName).innerHTML += "<div id='list'> \
                     <textarea rows='20' cols='80' id='list'> </textarea> \
                     </div>"
-
                }
-
                else if (i == 1) {
                     //add a fullscreen image
                }
-
-               else if (i == 3) {
+               else if (i == 2) {
                     //text box
                }
-
-               else if (i == 4) {
+               else if (i == 3) {
                     console.log("1");
                     mainTimer = true;
                } 
@@ -95,30 +88,22 @@ console.log("station make entered!");
      
   //loop through timer selections
      for (var i = 0; i < tLength; i++) {
-       
           var toInsert = ''; 
-          
           console.log("2");
-
           if (timeTheme[i].checked) {
-               
                document.getElementById(stationName).innerHTML += "<label class='bodyText' for='inputHours'>Hours: </label> \
                     <input type='text' id='inputHours' name='inputTime'> <br> \
                     <label class='bodyText' for='inputMinutes'>Minutes: </label> \
                     <input type='text' id='inputMinutes' name='inputTime'> <br>"
 
                }
-
                if(mainTimer) {
                     toInsert = "class='bigTimeBox'";
                }
                else toInsert = "class='smallTimeBox'";
-
                //forward pomodoro
                if (i == 0) {
-                    
                     console.log("3");
-
                     //Stopwatch
                     //var time = document.getElementById('timerTime').value;
                     document.getElementById(stationName).innerHTML += "<div " + toInsert + "> \
@@ -128,10 +113,7 @@ console.log("station make entered!");
                     <button onclick='resetTimer()' class='reset'>Reset</button> \
                     </div>"
 
-               }
-
-               else if (i == 1) {
-
+               } else if (i == 1) {
                     //Countdown
                     var min = document.getElementById('inputMinutes').value || "00";
                     var h = document.getElementById('inputHours').value || "00";
