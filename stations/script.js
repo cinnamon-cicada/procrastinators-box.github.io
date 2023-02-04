@@ -95,7 +95,7 @@ for (var i = 0; i < tLength; i++) {
                <input type='text' id='inputHours' name='inputTime'> <br> \
                <label class='bodyText' for='inputMinutes'>Minutes: </label> \
                <input type='text' id='inputMinutes' name='inputTime'> <br>"
-          }
+          
           if(mainTimer) {
                toInsert = "class='bigTimeBox'";
           }
