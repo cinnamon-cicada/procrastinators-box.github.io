@@ -185,5 +185,6 @@ input[name="inputTime"] {
   line-height: 40px;
   background: url(https://ibb.co/VS0KJ0Z) repeat-y;
   font: normal 14px verdana;
-  padding: 2px 10px;   
+  padding: 2px 10px; 
+  border-radius: 10px;
 }
