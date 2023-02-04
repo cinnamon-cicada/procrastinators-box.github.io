@@ -67,15 +67,14 @@
 /*** CREATE NEW STATION ***/
 #submitStation {
   background-color: #EBE4D5;
-  width: 15%;
-  height: 3.75%;
+  width: 12.5%;
+  height: 5%;
   color: dark grey;
   font-size: 16px;
   font-family: 'Patrick Hand', cursive;
   text-align: center;
   margin-top: 2%;
   border-radius: 10px;
-  padding-left: 2.5%;
 }
 
 #submitStation:however {
