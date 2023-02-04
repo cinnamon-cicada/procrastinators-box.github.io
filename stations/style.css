@@ -173,9 +173,11 @@ input[name="inputTime"] {
   margin-left: 11.25%;
 }
 
-//LIST
+/*** LIST ***/
+
 #list {
   background-color: #EBE4D5;
+  margin-top: 5%;
   width: 30%;
   height: 60%;
   padding: 3%;
