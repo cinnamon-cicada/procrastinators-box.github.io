@@ -83,10 +83,10 @@ html {
   z-index: 1;
   margin-left: 35.7%;
   width: 15%;
-  line-height: 75%;
-  margin-top: -10px;
+  line-height: 0%;
+  margin-top: -1px;
   padding: 1px;
-  height: 69px;
+  height: 70px;
 }
 
 #logoHeaderRight {
@@ -95,12 +95,12 @@ html {
   z-index: 1;
   margin-left: 50.7%;
   width: 5%;
-  margin-top: 0px;
+  margin-top: -1px;
   text-align: right;
   padding-right: 1px;
   z-index: 1;
   padding: 1px;
-  height: 69px;
+  height: 70px;
 }
 
 #logoSymbol {
