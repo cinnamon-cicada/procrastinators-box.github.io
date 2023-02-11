@@ -38,15 +38,16 @@ console.log("station make entered!");
   //check if there is a repeat station name
      var pLength = primaryTheme.length;
      var tLength = timeTheme.length;
-    for (var i = 0; i < stations.length; i++) {
-      for (var k = 1; k < stations.length; k++) {
-        if (stations[i]===stations[k]) {
-          console.log("error!! repeated name"); //WIP: make it more fancy later!!
-          noRepeats = false;
-        }
-      }
-    }
-     
+     for (var i = 0; i < stations.length; i++) {
+          for (var k = 1; k < stations.length; k++) {
+               if (stations[i]===stations[k]) {
+               console.log("error!! repeated name"); //WIP: make it more fancy later!!
+               noRepeats = false;
+               }
+          }
+     }
+
+     console.log("station name: " + stationName);
      if(stationName !== '' && noRepeats === true) {
 
           //create a blank station box
