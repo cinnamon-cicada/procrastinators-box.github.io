@@ -69,7 +69,7 @@ console.log("station make entered!");
                //forward pomodoro
                if (i == 0) {
                     //List
-                    document.getElementById(stationName).innerHTML += "<div id='list'> \
+                    document.getElementById(stationName).innerHTML += "<div id='listBox'> \
                     <textarea rows='20' cols='80' id='list'> </textarea> \
                     </div>"
                }
