@@ -36,6 +36,7 @@ function makeStation() {
 console.log("station make entered!");
   
   //check if there is a repeat station name
+     var stationName = document.getElementById('addTitle').value;
      var pLength = primaryTheme.length;
      var tLength = timeTheme.length;
      for (var i = 0; i < stations.length; i++) {
@@ -46,8 +47,7 @@ console.log("station make entered!");
                }
           }
      }
-
-     console.log("station name: " + stationName);
+     
      if(stationName !== '' && noRepeats === true) {
 
           //create a blank station box
