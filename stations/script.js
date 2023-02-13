@@ -257,6 +257,22 @@ function loadAvatar() {
      <div id='avatarTextBox' class='paragraphText'>" + quote + "</div>";
   
 }
+
+function saveToFirebase(email) {
+    var emailObject = {
+        email: email
+    };
+
+    firebase.database().ref('subscription-entries').push().set(emailObject)
+        .then(function(snapshot) {
+            success(); // some success method
+        }, function(error) {
+            console.log('error' + error);
+            error(); // some error method
+        });
+}
+
+saveToFirebase(email);
   
   //jump to place: document.getElementById("jump_to_this_location").scrollIntoView({behavior: 'smooth'});
   //add a SUBMIT button to know when to collect information
