@@ -1,4 +1,3 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -29,6 +28,10 @@ var stationName = document.getElementsByName('addTitle');
 
 var seconds = 0, minutes = 0, hours = 0, stopwatchOn = false;
 var stations = [];
+
+function testFB() {
+  //console.log(firebase);
+}
 
 function makeStation() {
   for (var i = 0, length = primaryTheme.length; i < length; i++) {
