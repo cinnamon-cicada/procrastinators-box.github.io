@@ -20,7 +20,7 @@ const analytics = getAnalytics(app);
 
 var script = document.createElement('script');
 script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
-script.type = 'text/javascript';
+script.type = 'module';
 document.getElementsByTagName('head')[0].appendChild(script);
 
 var primaryTheme = document.getElementsByName('primary_theme');
