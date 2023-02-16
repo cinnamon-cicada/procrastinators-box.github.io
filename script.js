@@ -1,14 +1,3 @@
-var script = document.createElement('script');
-script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
-script.type = 'text/javascript';
-document.getElementsByTagName('head')[0].appendChild(script);
-
-var primaryTheme = document.getElementsByName('primary_theme');
-var stationName = document.getElementsByName('addTitle');
-
-var seconds = 0, minutes = 0, hours = 0, stopwatchOn = false;
-var stations = [];
-
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
@@ -29,6 +18,17 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
+var script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);
+
+var primaryTheme = document.getElementsByName('primary_theme');
+var stationName = document.getElementsByName('addTitle');
+
+var seconds = 0, minutes = 0, hours = 0, stopwatchOn = false;
+var stations = [];
 
 function makeStation() {
   for (var i = 0, length = primaryTheme.length; i < length; i++) {
