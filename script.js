@@ -138,5 +138,10 @@ function loadAvatar() {
   
 }
 
+const cookieValue = document.cookie
+  .split("; ")
+  .find((row) => row.startsWith("test2="))
+  ?.split("=")[1];
+
   //jump to place: document.getElementById("jump_to_this_location").scrollIntoView({behavior: 'smooth'});
   //add a SUBMIT button to know when to collect information
