@@ -7,13 +7,6 @@
   line-height: 2;
 }
 
-/*** GENERAL STATIONS FORMAT ***/
-.stationsBox {
-  width: 100%;
-  height: 100%;
-  background-color: #D9D9D6;
-}
-
 /*** BLOG ***/
 
 #introBox {
@@ -37,6 +30,16 @@
 #introPhoto {
   width: 75%;
   height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  aspect-ratio : 1 / 1;
+}
+
+#blogPost {
+  width: 60%;
+  margin-left: 5%;
+  height: 50px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
