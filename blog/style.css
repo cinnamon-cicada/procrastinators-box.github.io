@@ -40,7 +40,7 @@
   width: 60%;
   margin-left: 5%;
   height: 50px;
-  position: relative;
+  position: absolute;
   overflow: hidden;
   border-radius: 50%;
   aspect-ratio : 1 / 1;
