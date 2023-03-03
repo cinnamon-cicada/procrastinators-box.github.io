@@ -43,7 +43,6 @@
   position: absolute;
   overflow: hidden;
   border-radius: 50%;
-  aspect-ratio : 1 / 1;
   background-color: #7091AD;
   text-align: left;
 }
