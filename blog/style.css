@@ -42,7 +42,7 @@
   height: 50px;
   position: absolute;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 20px;
   background-color: #7091AD;
   text-align: left;
 }
