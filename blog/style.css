@@ -39,10 +39,12 @@
 .blogPost {
   width: 60%;
   margin-left: 5%;
+  word-wrap: break-word;
   height: 50px;
   position: absolute;
   overflow: hidden;
   border-radius: 20px;
   background-color: #7091AD;
   text-align: left;
+  overflow: auto;
 }
