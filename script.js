@@ -164,12 +164,12 @@ function storageAvailable(type) {
 }
 
 if (storageAvailable('localStorage')) {
-  if (!localStorage.getItem('customStations')) {
-    addCustomizedStations();
-  } else {
-    setHtml();
-  }
-} else {
+      if (!localStorage.getItem('customStations')) {
+            addCustomizedStations();
+      } else {
+            setHtml();
+      } else {
+      }
 }
 
 addCustomizedStations(input) {
