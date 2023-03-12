@@ -134,6 +134,9 @@ console.log("station make entered!");
                break;
           }
      }
+     
+     var listInput = "<a href=#\'" + stationName + "\'>" + stationName + "</a>"
+     addCustomizedStations(document.getElementById(stationName).value, listInput);
 }
 
 function addTimer() {
@@ -258,6 +261,8 @@ function loadAvatar() {
   
 }
 
+//*** FIREBASE STUFF ***
+
 function saveToFirebase(email) {
     var emailObject = {
         email: email
@@ -273,6 +278,53 @@ function saveToFirebase(email) {
 }
 
 saveToFirebase(email);
+
+function storageAvailable(type) {
+    let storage;
+    try {
+        storage = window[type];
+        const x = '__storage_test__';
+        storage.setItem(x, x);
+        storage.removeItem(x);
+        return true;
+    }
+    catch (e) {
+        return e instanceof DOMException && (
+            // everything except Firefox
+            e.code === 22 ||
+            // Firefox
+            e.code === 1014 ||
+            // test name field too, because code might not be present
+            // everything except Firefox
+            e.name === 'QuotaExceededError' ||
+            // Firefox
+            e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+            // acknowledge QuotaExceededError only if there's something already stored
+            (storage && storage.length !== 0);
+    }
+}
+
+if (storageAvailable('localStorage')) {
+     if (!localStorage.getItem('customStations')) {
+          addCustomizedStations();
+     } else {
+          setHtml();
+     } else {
+     }
+}
+
+addCustomizedStations(box, list) {
+     //input: string
+     localStorage.addedStations += box;
+     localStorage.addedStationsList += list;
+     
+}
+
+setHtml() {
+     document.body.appendChild(localStorage.getItem('addedStations'));
+     document.getElementById("dropdownStuff").innerHTML += localStorage.getItem('addedStationsList'); 
+}
+
   
   //jump to place: document.getElementById("jump_to_this_location").scrollIntoView({behavior: 'smooth'});
   //add a SUBMIT button to know when to collect information
