@@ -171,13 +171,6 @@ if (storageAvailable('localStorage')) {
       } 
 }
 
-addCustomizedStations(input) {
-  
-}
-
-setHtml() {
-  
-}
 
 
   //jump to place: document.getElementById("jump_to_this_location").scrollIntoView({behavior: 'smooth'});
