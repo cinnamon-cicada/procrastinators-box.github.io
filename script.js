@@ -168,8 +168,7 @@ if (storageAvailable('localStorage')) {
             addCustomizedStations();
       } else {
             setHtml();
-      } else {
-      }
+      } 
 }
 
 addCustomizedStations(input) {
