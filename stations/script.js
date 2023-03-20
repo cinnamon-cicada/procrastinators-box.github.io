@@ -6,6 +6,9 @@ document.getElementsByTagName('head')[0].appendChild(script);
 var primaryTheme = document.getElementsByName('primary_theme');
 var stationName = document.getElementById('addTitle').value;
 var timeTheme = document.getElementsByName('time_theme');
+var addedStations = [];
+var addedStationsList = [];
+//oh dear is the array recursive? it will be blanked out every time the page reloads, but every time the page reloads, the web api depends on - WHAT IS ALREADY STORED IN THE API, NVM
 
 var seconds = 0, minutes = 0, hours = 0, timerOn = false;
 var stations = [];
@@ -313,9 +316,10 @@ if (storageAvailable('localStorage')) {
 
 function addCustomizedStations(box, list) {
      //input: string
-     localStorage.addedStations += box;
-     localStorage.addedStationsList += list;
-     
+     addedStations += box;
+     addedStationsList += list;
+     localStorage.setItem("addedStations", box);
+     localStorage.setItem("addedStationsList", list);
 }
 
 function setHtml() {
