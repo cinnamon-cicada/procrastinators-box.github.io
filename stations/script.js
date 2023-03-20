@@ -295,35 +295,30 @@ function storageAvailable(type) {
     }
     catch (e) {
         return e instanceof DOMException && (
-            // everything except Firefox
             e.code === 22 ||
-            // Firefox
             e.code === 1014 ||
-            // test name field too, because code might not be present
-            // everything except Firefox
             e.name === 'QuotaExceededError' ||
-            // Firefox
             e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
-            // acknowledge QuotaExceededError only if there's something already stored
             (storage && storage.length !== 0);
     }
 }
 
 if (storageAvailable('localStorage')) {
      if (!localStorage.getItem('addedStations')) {
-     } else {
+     } 
+     else {
           setHtml();
      } 
 }
 
-addCustomizedStations(box, list) {
+function addCustomizedStations(box, list) {
      //input: string
      localStorage.addedStations += box;
      localStorage.addedStationsList += list;
      
 }
 
-setHtml() {
+function setHtml() {
      document.body.appendChild(localStorage.getItem('addedStations'));
      document.getElementById("dropdownStuff").innerHTML += localStorage.getItem('addedStationsList'); 
 }
