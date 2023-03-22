@@ -318,13 +318,22 @@ function addCustomizedStations(box, list) {
      //input: string
      addedStations.push(box);
      addedStationsList.push(list);
-     localStorage.setItem("addedStations", box);
-     localStorage.setItem("addedStationsList", list);
+     localStorage.setItem("stations", addedStations);
+     localStorage.setItem("stationslist", addedStationsList);
+}
+//call setHtml() on previous session's cookies first, THEN add cookies to array, THEN begin modifying arrays 
+function setHtml() {
+     var st = localStorage.getItem('stations');
+     var stl = localStorage.getItem('stationslist');
+     for(int i = 0; i < localStorage.getItem('stations').length; i++) {
+          document.body.appendChild(st[i]);
+          document.getElementById("dropdownStuff").innerHTML += stl[i]; 
+     }
 }
 
-function setHtml() {
-     document.body.appendChild(localStorage.getItem('addedStations'));
-     document.getElementById("dropdownStuff").innerHTML += localStorage.getItem('addedStationsList'); 
+function testStuff() {
+     console.log("testing the stations array + its cookie");
+     console.log(
 }
 
   
