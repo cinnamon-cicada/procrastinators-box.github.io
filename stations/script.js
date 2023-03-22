@@ -316,8 +316,8 @@ if (storageAvailable('localStorage')) {
 
 function addCustomizedStations(box, list) {
      //input: string
-     addedStations += box;
-     addedStationsList += list;
+     addedStations.push(box);
+     addedStationsList.push(list);
      localStorage.setItem("addedStations", box);
      localStorage.setItem("addedStationsList", list);
 }
