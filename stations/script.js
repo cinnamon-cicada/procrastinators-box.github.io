@@ -318,9 +318,21 @@ function addCustomizedStations(box, list) {
      //input: string
      addedStations.push(box);
      addedStationsList.push(list);
-     localStorage.setItem("stations", addedStations);
-     localStorage.setItem("stationslist", addedStationsList);
+     //how to call initializecookiestuff at the beginning of page load?
+     if(addedStationsList.length == 0) {
+          localStorage.setItem("stations", addedStations);
+          localStorage.setItem("stationslist", addedStationsList);
+     }
+     else {
+          initializeCookieStuff();
+     }
 }
+
+function initializeCookieStuff() {
+     addedStations = localStorage.getItem("stations");
+     addedStationsList = localStorage.getItem("stationslist");
+}
+
 //call setHtml() on previous session's cookies first, THEN add cookies to array, THEN begin modifying arrays 
 function setHtml() {
      var st = localStorage.getItem('stations');
