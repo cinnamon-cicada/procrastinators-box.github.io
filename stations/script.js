@@ -316,6 +316,7 @@ if (storageAvailable('localStorage')) {
 
 function addCustomizedStations(box, list) {
      //input: string
+     console.log("addedCustomizedStations");
      addedStations.push(box);
      addedStationsList.push(list);
      //how to call initializecookiestuff at the beginning of page load?
@@ -329,23 +330,26 @@ function addCustomizedStations(box, list) {
 }
 
 function initializeCookieStuff() {
+     console.log("Cookies initialized");
      addedStations = localStorage.getItem("stations");
      addedStationsList = localStorage.getItem("stationslist");
 }
 
 //call setHtml() on previous session's cookies first, THEN add cookies to array, THEN begin modifying arrays 
 function setHtml() {
+     console.log("setHtml")
      var st = localStorage.getItem('stations');
      var stl = localStorage.getItem('stationslist');
      for(int i = 0; i < localStorage.getItem('stations').length; i++) {
           document.body.appendChild(st[i]);
-          document.getElementById("dropdownStuff").innerHTML += stl[i]; 
+          document.getElementById("dropdownStuff").innerHTML += stl[i];
      }
 }
 
 function testStuff() {
      console.log("testing the stations array + its cookie");
-     console.log(
+     console.log(addedStations);
+     console.log(addedStationsList);
 }
 
   
