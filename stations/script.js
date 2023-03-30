@@ -337,7 +337,7 @@ function initializeCookieStuff() {
 
 //call setHtml() on previous session's cookies first, THEN add cookies to array, THEN begin modifying arrays 
 function setHtml() {
-     console.log("setHtml")
+     console.log("setHtml");
      var st = localStorage.getItem('stations');
      var stl = localStorage.getItem('stationslist');
      for(int i = 0; i < localStorage.getItem('stations').length; i++) {
