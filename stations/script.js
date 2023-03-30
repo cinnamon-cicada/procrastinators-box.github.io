@@ -340,7 +340,7 @@ function setHtml() {
      console.log("setHtml");
      var st = localStorage.getItem('stations');
      var stl = localStorage.getItem('stationslist');
-     for(int i = 0; i < localStorage.getItem('stations').length; i++) {
+     for(var i = 0; i < localStorage.getItem('stations').length; i++) {
           document.body.appendChild(st[i]);
           document.getElementById("dropdownStuff").innerHTML += stl[i];
      }
