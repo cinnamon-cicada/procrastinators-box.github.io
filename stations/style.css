@@ -79,6 +79,7 @@
 
 #submitStation:hover {
   background-color: #E6D8BE;
+  margin-left: 5%;
 }
 
 #stationForms {
@@ -131,8 +132,10 @@ input[name="inputTime"] {
 }
 
 #optionsBox {
-  margin-left: 7.5%;
+  margin-left: 5%;
+  margin-top: 2.5%;
   padding: 15px;
+  width: 87.5%;
   border-radius: 10px;
   background-color: #EBE4D5;
   opacity: .75;
